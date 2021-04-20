@@ -18,23 +18,53 @@ class AvailableIcons {
 }
 
 class AvailableImages {
-  static const appLogo = {
-    'assetImage': AssetImage('assets/images/appLogo.png'),
-    'assetPath': 'assets/images/appLogo.png',
+  static const personalLogo = {
+    'assetImage': AssetImage('assets/images/Logo.png'),
+    'assetPath': 'assets/images/Logo.png',
   };
 
   static const background = {
     'assetImage': AssetImage(''),
-    'assetPath': 'assets/images/background.jpg',
+    'assetPath': '',
   };
 
   static const reddit_login = {
     'assetImage': AssetImage(''),
-    'assetPath': 'assets/images/inspire_1.png',
+    'assetPath': '',
   };
 
   static const pirple_login = {
     'assetImage': AssetImage('assets/images/phantom_2_1.png'),
     'assetPath': 'assets/images/phantom_2_1.png',
+  };
+
+  static const blackwhite_login = {
+    'assetImage': AssetImage('assets/images/phantom_2_1.png'),
+    'assetPath': 'assets/images/phantom_2_1.png',
+  };
+
+  static const login_4 = {
+    'assetImage': AssetImage(''),
+    'assetPath': '',
+  };
+
+  static const login_5 = {
+    'assetImage': AssetImage(''),
+    'assetPath': '',
+  };
+
+  static const login_6 = {
+    'assetImage': AssetImage(''),
+    'assetPath': '',
+  };
+
+  static const login_7 = {
+    'assetImage': AssetImage(''),
+    'assetPath': '',
+  };
+
+  static const login_8 = {
+    'assetImage': AssetImage(''),
+    'assetPath': '',
   };
 }

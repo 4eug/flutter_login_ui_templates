@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-class Fonts {
-  static const primaryFont = "Poppins";
-}
-
 //Icons
 class AvailableIcons {
   static const menuIcon = {

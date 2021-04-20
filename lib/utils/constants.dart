@@ -17,6 +17,7 @@ class AvailableIcons {
   };
 }
 
+// Images
 class AvailableImages {
   static const personalLogo = {
     'assetImage': AssetImage('assets/images/Logo.png'),

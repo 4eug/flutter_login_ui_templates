@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_login_template_ui/routes/routes.dart';
 import 'package:flutter_login_template_ui/utils/config.dart';
 import 'package:flutter_login_template_ui/utils/constants.dart';
 
@@ -13,18 +14,17 @@ class WelcomeScreen extends StatefulWidget {
 
 class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
- void initState() { 
-   super.initState();
+  void initState() {
+    super.initState();
     loadContext();
- }
- 
-  loadContext() async {
-    Timer(Duration(seconds: 5), (){
-      Navigator.of(context).pushNamedAndRemoveUntil(
-        , (route) => false);
-    });
   }
 
+  loadContext() async {
+    Timer(Duration(seconds: 5), () {
+      Navigator.of(context)
+          .pushNamedAndRemoveUntil(homeScreenRoute, (route) => false);
+    });
+  }
 
   Widget build(BuildContext context) {
     SizeConfig().init(context);

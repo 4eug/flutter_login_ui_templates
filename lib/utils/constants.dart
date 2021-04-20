@@ -34,37 +34,37 @@ class AvailableImages {
   };
 
   static const pirple_login = {
-    'assetImage': AssetImage('assets/images/phantom_2_1.png'),
-    'assetPath': 'assets/images/phantom_2_1.png',
+    'assetImage': AssetImage('assets/ui/Pirple.png'),
+    'assetPath': 'assets/ui/Pirple.png',
   };
 
   static const blackwhite_login = {
-    'assetImage': AssetImage('assets/images/phantom_2_1.png'),
-    'assetPath': 'assets/images/phantom_2_1.png',
+    'assetImage': AssetImage('assets/ui/Black&White.png'),
+    'assetPath': 'assets/ui/Black&White.png',
   };
 
-  static const login_4 = {
-    'assetImage': AssetImage(''),
-    'assetPath': '',
+  static const login = {
+    'assetImage': AssetImage('assets/ui/Login.png'),
+    'assetPath': 'assets/ui/Login.png',
   };
 
-  static const login_5 = {
-    'assetImage': AssetImage(''),
-    'assetPath': '',
+  static const grapple = {
+    'assetImage': AssetImage('assets/ui/Grapple.png'),
+    'assetPath': 'assets/ui/Grapple.png',
   };
 
-  static const login_6 = {
-    'assetImage': AssetImage(''),
-    'assetPath': '',
+  static const link = {
+    'assetImage': AssetImage('assets/ui/Link.png'),
+    'assetPath': 'assets/ui/Link.png',
   };
 
-  static const login_7 = {
-    'assetImage': AssetImage(''),
-    'assetPath': '',
+  static const patterns = {
+    'assetImage': AssetImage('assets/ui/Patterns.png'),
+    'assetPath': 'assets/ui/Patterns.png',
   };
 
-  static const login_8 = {
-    'assetImage': AssetImage(''),
-    'assetPath': '',
+  static const lighthouse = {
+    'assetImage': AssetImage('assets/ui/Lighthouse.png'),
+    'assetPath': 'assets/ui/Lighthouse.png',
   };
 }

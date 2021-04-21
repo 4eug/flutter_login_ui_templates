@@ -36,7 +36,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           Container(
             height: SizeConfig.blockSizeVertical * 100,
             child: Image.asset(
-              AvailableImages.background["assetPath"],
+              UIHelper.background,
               fit: BoxFit.fill,
             ),
           ),
@@ -45,12 +45,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             left: SizeConfig.blockSizeHorizontal * 4,
             child: Container(
               padding: EdgeInsets.only(top: SizeConfig.blockSizeVertical * 5),
-              child: Image.asset(
-                AvailableImages.personalLogo["assetPath"],
-                height: SizeConfig.blockSizeVertical * 5,
-                width: SizeConfig.blockSizeHorizontal * 15,
-                fit: BoxFit.fill,
-              ),
+              // child: Image.asset(
+              //   AvailableImages.personalLogo["assetPath"],
+              //   height: SizeConfig.blockSizeVertical * 5,
+              //   width: SizeConfig.blockSizeHorizontal * 15,
+              //   fit: BoxFit.fill,
+              // ),
             ),
           ),
           Positioned(

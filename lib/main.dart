@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login_template_ui/routes/router.dart';
 import 'package:flutter_login_template_ui/routes/routes.dart';
-// import 'package:flutter_login_template_ui/routes/routes.dart' as router;
 import 'package:flutter_login_template_ui/utils/config.dart';
 import 'package:flutter_login_template_ui/utils/theme.dart';
 

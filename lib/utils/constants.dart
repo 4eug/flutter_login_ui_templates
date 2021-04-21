@@ -34,6 +34,10 @@ class AvailableImages {
     'assetImage': AssetImage('assets/ui/Pirple.png'),
     'assetPath': 'assets/ui/Pirple.png',
   };
+  static const phantom_2 = {
+    'assetImage': AssetImage('assets/images/phantom_2_1.png'),
+    'assetPath': 'assets/images/phantom_2_1.png',
+  };
 
   static const blackwhite_login = {
     'assetImage': AssetImage('assets/ui/Black&White.png'),

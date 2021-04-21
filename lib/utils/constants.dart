@@ -21,8 +21,8 @@ class AvailableImages {
   };
 
   static const background = {
-    'assetImage': AssetImage(''),
-    'assetPath': '',
+    'assetImage': AssetImage('assets/images/background.jpg'),
+    'assetPath': 'assets/images/background.jpg',
   };
 
   static const reddit_login = {

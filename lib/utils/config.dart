@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+// app configurations
+class AppConfig {
+  static const appName = "Flutter Login Templates";
+}
+
 //Class to get Screen Size
 class SizeConfig {
   static MediaQueryData _mediaQueryData;

@@ -1,3 +1,5 @@
-const String homeScreenRoute = 'home';
+const String testScreenRoute = 'test';
 
-const String welcomeScrenRoute = 'home';
+const String welcomeScreenRoute = 'welcome';
+
+const String homeScreenRoute = 'home';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_login_template_ui/routes/routes.dart';
+import 'package:flutter_login_template_ui/screens/welcome_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,7 +20,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.white,
       ),
-      initialRoute: welcomeScrenRoute,
+      // initialRoute: welcomeScrenRoute,
+      home: WelcomeScreen(),
     );
   }
 }

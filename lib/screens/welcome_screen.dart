@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_login_template_ui/routes/routes.dart';
 import 'package:flutter_login_template_ui/utils/config.dart';
-import 'package:flutter_login_template_ui/utils/constants.dart';
+import 'package:flutter_login_template_ui/widgets/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class WelcomeScreen extends StatefulWidget {

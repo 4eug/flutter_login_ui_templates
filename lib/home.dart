@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login_template_ui/home_list.dart';
-import 'package:flutter_login_template_ui/utils/constants.dart';
+import 'package:flutter_login_template_ui/widgets/constants.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key}) : super(key: key);

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_login_template_ui/screens/reddit_login.dart';
+import 'package:flutter_login_template_ui/widgets/constants.dart';
 
 class HomeList {
   Widget navigateScreen;

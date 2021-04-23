@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class UIHelper {
+class UIGuide {
   //Images
   static final String grapple = "assets/ui/Grapple_login_ui.jpg";
   static final String blackwhite = "assets/ui/Black&White_login_ui.jpg";

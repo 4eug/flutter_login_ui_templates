@@ -20,37 +20,37 @@ class HomeList {
   static List<HomeList> homeList = [
     // Reddit
     HomeList(
-      imagePath: UIHelper.reddit,
+      imagePath: UIGuide.reddit,
       navigateScreen: RedditLogin(),
     ),
     // Pirple
     HomeList(
-      imagePath: UIHelper.pirple,
+      imagePath: UIGuide.pirple,
       navigateScreen: PirpleLogin(),
     ),
     // Grapple
     HomeList(
-      imagePath: UIHelper.grapple,
+      imagePath: UIGuide.grapple,
       navigateScreen: GrappleLogin(),
     ),
     //Black & White
     HomeList(
-      imagePath: UIHelper.blackwhite,
+      imagePath: UIGuide.blackwhite,
       navigateScreen: BlackWhiteLogin(),
     ),
     //Link
     HomeList(
-      imagePath: UIHelper.link,
+      imagePath: UIGuide.link,
       navigateScreen: LinkLogin(),
     ),
     //Patterns
     HomeList(
-      imagePath: UIHelper.patterns,
+      imagePath: UIGuide.patterns,
       navigateScreen: PatternsLogin(),
     ),
     //LightHouse
     HomeList(
-      imagePath: UIHelper.lighthouse,
+      imagePath: UIGuide.lighthouse,
       navigateScreen: LightHouseLogin(),
     ),
   ];

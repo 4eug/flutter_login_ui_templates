@@ -13,7 +13,7 @@ class HomeList {
 
   static List<HomeList> homeList = [
     HomeList(
-      imagePath: UIHelper.applePhoto,
+      imagePath: UIHelper.reddit,
       navigateScreen: RedditLogin(),
     ),
   ];

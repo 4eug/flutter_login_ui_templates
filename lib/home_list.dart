@@ -1,5 +1,9 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_login_template_ui/screens/black&white_login.dart';
 import 'package:flutter_login_template_ui/screens/grapple.dart';
+import 'package:flutter_login_template_ui/screens/lighthouse.dart';
+import 'package:flutter_login_template_ui/screens/link.dart';
+import 'package:flutter_login_template_ui/screens/patterns.dart';
 import 'package:flutter_login_template_ui/screens/pirple.dart';
 import 'package:flutter_login_template_ui/screens/reddit_login.dart';
 import 'package:flutter_login_template_ui/widgets/constants.dart';
@@ -21,33 +25,33 @@ class HomeList {
     ),
     // Pirple
     HomeList(
-      imagePath: UIHelper.reddit,
+      imagePath: UIHelper.pirple,
       navigateScreen: PirpleLogin(),
     ),
     // Grapple
     HomeList(
-      imagePath: UIHelper.reddit,
+      imagePath: UIHelper.grapple,
       navigateScreen: GrappleLogin(),
     ),
     //Black & White
     HomeList(
-      imagePath: UIHelper.reddit,
-      navigateScreen: RedditLogin(),
+      imagePath: UIHelper.blackwhite,
+      navigateScreen: BlackWhiteLogin(),
     ),
     //Link
     HomeList(
-      imagePath: UIHelper.reddit,
-      navigateScreen: RedditLogin(),
+      imagePath: UIHelper.link,
+      navigateScreen: LinkLogin(),
     ),
     //Patterns
     HomeList(
-      imagePath: UIHelper.reddit,
-      navigateScreen: RedditLogin(),
+      imagePath: UIHelper.patterns,
+      navigateScreen: PatternsLogin(),
     ),
     //LightHouse
     HomeList(
-      imagePath: UIHelper.reddit,
-      navigateScreen: RedditLogin(),
+      imagePath: UIHelper.lighthouse,
+      navigateScreen: LightHouseLogin(),
     ),
   ];
 }

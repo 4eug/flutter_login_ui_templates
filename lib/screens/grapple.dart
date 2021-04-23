@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Grapple extends StatefulWidget {
-  Grapple({Key key}) : super(key: key);
+class GrappleLogin extends StatefulWidget {
+  GrappleLogin({Key key}) : super(key: key);
 
   @override
-  _GrappleState createState() => _GrappleState();
+  _GrappleLoginState createState() => _GrappleLoginState();
 }
 
-class _GrappleState extends State<Grapple> {
+class _GrappleLoginState extends State<GrappleLogin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold();

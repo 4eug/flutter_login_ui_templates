@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Pirple extends StatefulWidget {
-  Pirple({Key key}) : super(key: key);
+class PirpleLogin extends StatefulWidget {
+  PirpleLogin({Key key}) : super(key: key);
 
   @override
-  _PirpleState createState() => _PirpleState();
+  _PirpleLoginState createState() => _PirpleLoginState();
 }
 
-class _PirpleState extends State<Pirple> {
+class _PirpleLoginState extends State<PirpleLogin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold();

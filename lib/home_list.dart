@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_login_template_ui/screens/grapple.dart';
+import 'package:flutter_login_template_ui/screens/pirple.dart';
 import 'package:flutter_login_template_ui/screens/reddit_login.dart';
 import 'package:flutter_login_template_ui/widgets/constants.dart';
 
@@ -20,12 +22,12 @@ class HomeList {
     // Pirple
     HomeList(
       imagePath: UIHelper.reddit,
-      navigateScreen: RedditLogin(),
+      navigateScreen: PirpleLogin(),
     ),
     // Grapple
     HomeList(
       imagePath: UIHelper.reddit,
-      navigateScreen: RedditLogin(),
+      navigateScreen: GrappleLogin(),
     ),
     //Black & White
     HomeList(

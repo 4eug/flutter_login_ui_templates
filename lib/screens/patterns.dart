@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Patterns extends StatefulWidget {
-  Patterns({Key key}) : super(key: key);
+class PatternsLogin extends StatefulWidget {
+  PatternsLogin({Key key}) : super(key: key);
 
   @override
-  _PatternsState createState() => _PatternsState();
+  _PatternsLoginState createState() => _PatternsLoginState();
 }
 
-class _PatternsState extends State<Patterns> {
+class _PatternsLoginState extends State<PatternsLogin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold();

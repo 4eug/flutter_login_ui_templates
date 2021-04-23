@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Link extends StatefulWidget {
-  Link({Key key}) : super(key: key);
+class LinkLogin extends StatefulWidget {
+  LinkLogin({Key key}) : super(key: key);
 
   @override
-  _LinkState createState() => _LinkState();
+  _LinkLoginState createState() => _LinkLoginState();
 }
 
-class _LinkState extends State<Link> {
+class _LinkLoginState extends State<LinkLogin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold();

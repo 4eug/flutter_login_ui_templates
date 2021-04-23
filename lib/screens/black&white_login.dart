@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class BlackWhite extends StatefulWidget {
-  BlackWhite({Key key}) : super(key: key);
+class BlackWhiteLogin extends StatefulWidget {
+  BlackWhiteLogin({Key key}) : super(key: key);
 
   @override
-  _BlackWhiteState createState() => _BlackWhiteState();
+  _BlackWhiteLoginState createState() => _BlackWhiteLoginState();
 }
 
-class _BlackWhiteState extends State<BlackWhite> {
+class _BlackWhiteLoginState extends State<BlackWhiteLogin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold();

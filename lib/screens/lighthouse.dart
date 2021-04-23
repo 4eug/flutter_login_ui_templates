@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class LightHouse extends StatefulWidget {
-  LightHouse({Key key}) : super(key: key);
+class LightHouseLogin extends StatefulWidget {
+  LightHouseLogin({Key key}) : super(key: key);
 
   @override
-  _LightHouseState createState() => _LightHouseState();
+  _LightHouseLoginState createState() => _LightHouseLoginState();
 }
 
-class _LightHouseState extends State<LightHouse> {
+class _LightHouseLoginState extends State<LightHouseLogin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold();

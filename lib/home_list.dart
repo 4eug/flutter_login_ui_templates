@@ -12,6 +12,37 @@ class HomeList {
   });
 
   static List<HomeList> homeList = [
+    // Reddit
+    HomeList(
+      imagePath: UIHelper.reddit,
+      navigateScreen: RedditLogin(),
+    ),
+    // Pirple
+    HomeList(
+      imagePath: UIHelper.reddit,
+      navigateScreen: RedditLogin(),
+    ),
+    // Grapple
+    HomeList(
+      imagePath: UIHelper.reddit,
+      navigateScreen: RedditLogin(),
+    ),
+    //Black & White
+    HomeList(
+      imagePath: UIHelper.reddit,
+      navigateScreen: RedditLogin(),
+    ),
+    //Link
+    HomeList(
+      imagePath: UIHelper.reddit,
+      navigateScreen: RedditLogin(),
+    ),
+    //Patterns
+    HomeList(
+      imagePath: UIHelper.reddit,
+      navigateScreen: RedditLogin(),
+    ),
+    //LightHouse
     HomeList(
       imagePath: UIHelper.reddit,
       navigateScreen: RedditLogin(),

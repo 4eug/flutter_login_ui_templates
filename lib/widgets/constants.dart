@@ -11,6 +11,7 @@ class UIHelper {
   static final String pirple = "assets/ui/Pirple_login_ui.jpg";
   static final String reddit = "assets/ui/Reddit_login_ui.jpg";
   static final String background = "assets/images/background.jpg";
+  static final String logo = "assets/images/Logo.png";
 
   // Global Colors
   static const Color WHITE = Colors.white;

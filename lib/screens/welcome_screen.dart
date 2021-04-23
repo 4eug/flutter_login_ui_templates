@@ -45,33 +45,33 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             left: SizeConfig.blockSizeHorizontal * 4,
             child: Container(
               padding: EdgeInsets.only(top: SizeConfig.blockSizeVertical * 5),
-              // child: Image.asset(
-              //   AvailableImages.personalLogo["assetPath"],
-              //   height: SizeConfig.blockSizeVertical * 5,
-              //   width: SizeConfig.blockSizeHorizontal * 15,
-              //   fit: BoxFit.fill,
-              // ),
+              child: Image.asset(
+                UIHelper.logo,
+                height: SizeConfig.blockSizeVertical * 5,
+                width: SizeConfig.blockSizeHorizontal * 15,
+                fit: BoxFit.fill,
+              ),
             ),
           ),
           Positioned(
             top: SizeConfig.blockSizeVertical * 50,
             left: SizeConfig.blockSizeHorizontal * 4,
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  "natur.",
+                  "Login Ui Templates",
                   style: GoogleFonts.montserrat(
                       fontSize: 22.0,
                       color: Colors.black,
-                      fontWeight: FontWeight.w300),
+                      fontWeight: FontWeight.w500),
                 ),
                 Text(
-                  "With Dji Mavic Pro",
+                  "With Flutter",
                   style: GoogleFonts.montserrat(
                       fontSize: 22.0,
                       color: Colors.black,
-                      fontWeight: FontWeight.w300),
+                      fontWeight: FontWeight.w500),
                 )
               ],
             ),

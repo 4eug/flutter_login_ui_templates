@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_login_template_ui/utils/config.dart';
+import 'package:flutter_login_template_ui/widgets/constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class BlackWhiteLogin extends StatefulWidget {
@@ -13,18 +15,45 @@ class _BlackWhiteLoginState extends State<BlackWhiteLogin> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 100),
-          color: Color(0xFFfafafa),
-          width: double.infinity,
-          child: Column(
-            children: [
-              _inputField(context),
-              _inputField(context),
-              _loginBtn(context)
-            ],
+        child: Stack(children: [
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 40, vertical: 120),
+            color: Color(0xFFfafafa),
+            width: double.infinity,
+            child: Column(
+              children: [
+                Padding(padding: EdgeInsets.only()),
+                Center(
+                  child: Image.asset(
+                    UIGuide.logo,
+                    height: SizeConfig.blockSizeVertical * 12,
+                    width: SizeConfig.blockSizeHorizontal * 100,
+                  ),
+                ),
+                SizedBox(height: SizeConfig.blockSizeVertical * 10),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Text(
+                      "LOGIN",
+                      style: GoogleFonts.roboto(
+                        fontSize: 25,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    )
+                  ],
+                ),
+                SizedBox(height: SizeConfig.blockSizeVertical * 3),
+                _inputField1(context),
+                _inputField2(context),
+                _loginBtn(context)
+              ],
+            ),
           ),
-        ),
+        ]),
       ),
     );
   }
@@ -54,22 +83,57 @@ Widget _loginBtn(context) {
   );
 }
 
-Widget _inputField(context) {
+Widget _inputField1(context) {
   return Container(
     decoration: BoxDecoration(color: Colors.black),
     margin: EdgeInsets.only(bottom: 20),
     child: TextField(
-      style: TextStyle(
-        fontFamily: 'Poppins',
-        fontSize: 20,
-        color: Colors.grey,
-        letterSpacing: 0.24,
-        fontWeight: FontWeight.w200,
-      ),
+      style: GoogleFonts.roboto(
+          fontSize: 20,
+          color: Colors.grey,
+          letterSpacing: 0.24,
+          fontWeight: FontWeight.w200),
       decoration: InputDecoration(
         contentPadding: EdgeInsets.symmetric(vertical: 25),
         hintStyle: TextStyle(
-          color: Color(0xffA6B0BD),
+          color: Colors.black,
+        ),
+        fillColor: Colors.white,
+        filled: true,
+        prefixIconConstraints: BoxConstraints(
+          minWidth: 75,
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(1),
+          ),
+          borderSide: BorderSide(color: Colors.black),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(1),
+          ),
+          borderSide: BorderSide(color: Colors.black),
+        ),
+      ),
+    ),
+  );
+}
+
+Widget _inputField2(context) {
+  return Container(
+    decoration: BoxDecoration(color: Colors.black),
+    margin: EdgeInsets.only(bottom: 20),
+    child: TextField(
+      style: GoogleFonts.roboto(
+          fontSize: 20,
+          color: Colors.grey,
+          letterSpacing: 0.24,
+          fontWeight: FontWeight.w200),
+      decoration: InputDecoration(
+        contentPadding: EdgeInsets.symmetric(vertical: 25),
+        hintStyle: TextStyle(
+          color: Colors.black,
         ),
         fillColor: Colors.white,
         filled: true,

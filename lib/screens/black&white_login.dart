@@ -35,7 +35,7 @@ Widget _loginBtn(context) {
     width: double.infinity,
     margin: EdgeInsets.only(top: 20, bottom: 50),
     decoration: BoxDecoration(
-      color: Color(0xff19327d),
+      color: Colors.black,
     ),
     // ignore: deprecated_member_use
     child: RaisedButton(
@@ -49,26 +49,14 @@ Widget _loginBtn(context) {
             letterSpacing: 0.168,
             fontWeight: FontWeight.w500),
       ),
-      color: Color(0xff19327d),
+      color: Colors.black,
     ),
   );
 }
 
 Widget _inputField(context) {
   return Container(
-    decoration: BoxDecoration(
-      borderRadius: BorderRadius.all(
-        Radius.circular(50),
-      ),
-      boxShadow: [
-        BoxShadow(
-          color: Colors.black,
-          blurRadius: 25,
-          offset: Offset(0, 5),
-          spreadRadius: -25,
-        ),
-      ],
-    ),
+    decoration: BoxDecoration(color: Colors.black),
     margin: EdgeInsets.only(bottom: 20),
     child: TextField(
       style: TextStyle(
@@ -92,13 +80,13 @@ Widget _inputField(context) {
           borderRadius: BorderRadius.all(
             Radius.circular(1),
           ),
-          borderSide: BorderSide(color: Colors.white),
+          borderSide: BorderSide(color: Colors.black),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.all(
             Radius.circular(1),
           ),
-          borderSide: BorderSide(color: Colors.white),
+          borderSide: BorderSide(color: Colors.black),
         ),
       ),
     ),

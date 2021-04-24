@@ -52,8 +52,10 @@ class _BlackWhiteLoginState extends State<BlackWhiteLogin> {
                 _inputField2(context),
                 SizedBox(height: SizeConfig.blockSizeVertical * 3),
                 _loginBtn(context),
-                SizedBox(height: SizeConfig.blockSizeVertical * 1.5),
-                _signUp()
+                SizedBox(height: SizeConfig.blockSizeVertical * 2),
+                _signUp(),
+                SizedBox(height: SizeConfig.blockSizeVertical * 5),
+                _terms()
               ],
             ),
           ),
@@ -147,5 +149,26 @@ Widget _signUp() {
           letterSpacing: 0.168,
           fontWeight: FontWeight.w500),
     ),
+  );
+}
+
+Widget _terms() {
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Text(
+        "By signing up, you agree with our ",
+        style: GoogleFonts.roboto(fontSize: 15),
+      ),
+      InkWell(
+        child: Text(
+          "Terms & Conditions",
+          style: GoogleFonts.roboto(
+              fontSize: 15,
+              fontWeight: FontWeight.bold,
+              decoration: TextDecoration.underline),
+        ),
+      )
+    ],
   );
 }

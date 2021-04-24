@@ -48,8 +48,12 @@ class _BlackWhiteLoginState extends State<BlackWhiteLogin> {
                 ),
                 SizedBox(height: SizeConfig.blockSizeVertical * 3),
                 _inputField1(context),
+                SizedBox(height: SizeConfig.blockSizeVertical * 1.5),
                 _inputField2(context),
-                _loginBtn(context)
+                SizedBox(height: SizeConfig.blockSizeVertical * 3),
+                _loginBtn(context),
+                SizedBox(height: SizeConfig.blockSizeVertical * 1.5),
+                _signUp()
               ],
             ),
           ),
@@ -62,16 +66,15 @@ class _BlackWhiteLoginState extends State<BlackWhiteLogin> {
 Widget _loginBtn(context) {
   return Container(
     width: double.infinity,
-    margin: EdgeInsets.only(top: 20, bottom: 50),
     decoration: BoxDecoration(
       color: Colors.black,
     ),
     // ignore: deprecated_member_use
     child: RaisedButton(
       onPressed: () => {},
-      padding: EdgeInsets.symmetric(vertical: 25),
+      padding: EdgeInsets.symmetric(vertical: 20),
       child: Text(
-        "Log In",
+        "LOG IN",
         style: GoogleFonts.roboto(
             fontSize: 20,
             color: Colors.white,
@@ -84,25 +87,15 @@ Widget _loginBtn(context) {
 }
 
 Widget _inputField1(context) {
-  return Container(
-    decoration: BoxDecoration(color: Colors.black),
-    margin: EdgeInsets.only(bottom: 20),
-    child: TextField(
+  return TextField(
       style: GoogleFonts.roboto(
           fontSize: 20,
-          color: Colors.grey,
-          letterSpacing: 0.24,
-          fontWeight: FontWeight.w200),
-      decoration: InputDecoration(
-        contentPadding: EdgeInsets.symmetric(vertical: 25),
-        hintStyle: TextStyle(
           color: Colors.black,
-        ),
-        fillColor: Colors.white,
-        filled: true,
-        prefixIconConstraints: BoxConstraints(
-          minWidth: 75,
-        ),
+          letterSpacing: 0.24,
+          fontWeight: FontWeight.w500),
+      textAlign: TextAlign.start,
+      decoration: InputDecoration(
+        hintText: "USERNAME",
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.all(
             Radius.circular(1),
@@ -115,31 +108,19 @@ Widget _inputField1(context) {
           ),
           borderSide: BorderSide(color: Colors.black),
         ),
-      ),
-    ),
-  );
+      ));
 }
 
 Widget _inputField2(context) {
-  return Container(
-    decoration: BoxDecoration(color: Colors.black),
-    margin: EdgeInsets.only(bottom: 20),
-    child: TextField(
+  return TextField(
       style: GoogleFonts.roboto(
           fontSize: 20,
-          color: Colors.grey,
-          letterSpacing: 0.24,
-          fontWeight: FontWeight.w200),
-      decoration: InputDecoration(
-        contentPadding: EdgeInsets.symmetric(vertical: 25),
-        hintStyle: TextStyle(
           color: Colors.black,
-        ),
-        fillColor: Colors.white,
-        filled: true,
-        prefixIconConstraints: BoxConstraints(
-          minWidth: 75,
-        ),
+          letterSpacing: 0.24,
+          fontWeight: FontWeight.w500),
+      textAlign: TextAlign.start,
+      decoration: InputDecoration(
+        hintText: "PASSWORD",
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.all(
             Radius.circular(1),
@@ -152,7 +133,19 @@ Widget _inputField2(context) {
           ),
           borderSide: BorderSide(color: Colors.black),
         ),
-      ),
+      ));
+}
+
+Widget _signUp() {
+  return InkWell(
+    onTap: () {},
+    child: Text(
+      "SIGN UP",
+      style: GoogleFonts.roboto(
+          fontSize: 20,
+          color: Colors.black,
+          letterSpacing: 0.168,
+          fontWeight: FontWeight.w500),
     ),
   );
 }

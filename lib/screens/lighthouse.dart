@@ -18,7 +18,7 @@ class _LightHouseLoginState extends State<LightHouseLogin> {
         child: Stack(
           children: [
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 30, vertical: 80),
+              padding: EdgeInsets.symmetric(horizontal: 30, vertical: 60),
               color: Color(0xFFfafafa),
               width: double.infinity,
               child: Column(
@@ -79,7 +79,11 @@ class _LightHouseLoginState extends State<LightHouseLogin> {
                   SizedBox(height: SizeConfig.blockSizeVertical * 5),
                   _googlelogin(context),
                   SizedBox(height: SizeConfig.blockSizeVertical * 3),
-                  _fblogin(context)
+                  _fblogin(context),
+                  SizedBox(height: SizeConfig.blockSizeVertical * 3),
+                  _emaillogin(context),
+                  SizedBox(height: SizeConfig.blockSizeVertical * 7),
+                  _already()
                 ],
               ),
             )
@@ -93,13 +97,13 @@ class _LightHouseLoginState extends State<LightHouseLogin> {
 Widget _googlelogin(context) {
   return Container(
     width: double.infinity,
-    decoration: BoxDecoration(
-      color: Colors.red,
-    ),
     // ignore: deprecated_member_use
     child: RaisedButton(
       onPressed: () => {},
       padding: EdgeInsets.symmetric(vertical: 20),
+      shape: new RoundedRectangleBorder(
+        borderRadius: new BorderRadius.circular(30.0),
+      ),
       child: Text(
         "Continue With Google +",
         style: GoogleFonts.roboto(
@@ -116,13 +120,13 @@ Widget _googlelogin(context) {
 Widget _fblogin(context) {
   return Container(
     width: double.infinity,
-    decoration: BoxDecoration(
-      color: Colors.blue,
-    ),
     // ignore: deprecated_member_use
     child: RaisedButton(
       onPressed: () => {},
       padding: EdgeInsets.symmetric(vertical: 20),
+      shape: new RoundedRectangleBorder(
+        borderRadius: new BorderRadius.circular(30.0),
+      ),
       child: Text(
         "Continue With Facebook",
         style: GoogleFonts.roboto(
@@ -133,5 +137,50 @@ Widget _fblogin(context) {
       ),
       color: Colors.blue,
     ),
+  );
+}
+
+Widget _emaillogin(context) {
+  return Container(
+    width: double.infinity,
+    // ignore: deprecated_member_use
+    child: RaisedButton(
+      onPressed: () => {},
+      padding: EdgeInsets.symmetric(vertical: 20),
+      shape: new RoundedRectangleBorder(
+        borderRadius: new BorderRadius.circular(30.0),
+      ),
+      child: Text(
+        "Continue With Email address",
+        style: GoogleFonts.roboto(
+            fontSize: 20,
+            color: Colors.white,
+            letterSpacing: 0.168,
+            fontWeight: FontWeight.w500),
+      ),
+      color: Colors.black,
+    ),
+  );
+}
+
+Widget _already() {
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Text(
+        "Already have an account? ",
+        style: GoogleFonts.roboto(fontSize: 15),
+      ),
+      InkWell(
+        child: Text(
+          "Sign In",
+          style: GoogleFonts.roboto(
+              fontSize: 15,
+              fontWeight: FontWeight.bold,
+              decoration: TextDecoration.underline),
+        ),
+        onTap: () {},
+      )
+    ],
   );
 }

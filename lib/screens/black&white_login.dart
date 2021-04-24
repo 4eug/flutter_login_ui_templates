@@ -168,6 +168,7 @@ Widget _terms() {
               fontWeight: FontWeight.bold,
               decoration: TextDecoration.underline),
         ),
+        onTap: () {},
       )
     ],
   );

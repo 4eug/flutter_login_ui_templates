@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class UIGuide {
-  //Images
+  //Ui Images
   static final String grapple = "assets/ui/Grapple_login_ui.jpg";
   static final String blackwhite = "assets/ui/Black&White_login_ui.jpg";
   static final String lighthouse = "assets/ui/Lighthouse_login_ui.jpg";
@@ -12,6 +12,13 @@ class UIGuide {
   static final String reddit = "assets/ui/Reddit_login_ui.jpg";
   static final String background = "assets/images/background.jpg";
   static final String logo = "assets/images/Logo.png";
+
+  // Images
+
+  // ignore: non_constant_identifier_names
+  static final String lighthouse_image = "assets/images/lighthouse.png";
+  // ignore: non_constant_identifier_names
+  static final String link_image = "assets/images/link.png";
 
   // Global Colors
   static const Color WHITE = Colors.white;

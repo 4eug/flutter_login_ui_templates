@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login_template_ui/utils/config.dart';
 import 'package:flutter_login_template_ui/widgets/constants.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LightHouseLogin extends StatefulWidget {
@@ -104,13 +105,23 @@ Widget _googlelogin(context) {
       shape: new RoundedRectangleBorder(
         borderRadius: new BorderRadius.circular(30.0),
       ),
-      child: Text(
-        "Continue With Google +",
-        style: GoogleFonts.roboto(
-            fontSize: 20,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          FaIcon(
+            FontAwesomeIcons.googlePlusG,
             color: Colors.white,
-            letterSpacing: 0.168,
-            fontWeight: FontWeight.w500),
+          ),
+          Text(
+            "Continue With Google +",
+            style: GoogleFonts.roboto(
+                fontSize: 23,
+                color: Colors.white,
+                letterSpacing: 0.168,
+                fontWeight: FontWeight.w500),
+          ),
+        ],
       ),
       color: Colors.red,
     ),
@@ -127,13 +138,23 @@ Widget _fblogin(context) {
       shape: new RoundedRectangleBorder(
         borderRadius: new BorderRadius.circular(30.0),
       ),
-      child: Text(
-        "Continue With Facebook",
-        style: GoogleFonts.roboto(
-            fontSize: 20,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          FaIcon(
+            FontAwesomeIcons.facebookF,
             color: Colors.white,
-            letterSpacing: 0.168,
-            fontWeight: FontWeight.w500),
+          ),
+          Text(
+            "Continue With Facebook",
+            style: GoogleFonts.roboto(
+                fontSize: 23,
+                color: Colors.white,
+                letterSpacing: 0.168,
+                fontWeight: FontWeight.w500),
+          ),
+        ],
       ),
       color: Colors.blue,
     ),
@@ -153,7 +174,7 @@ Widget _emaillogin(context) {
       child: Text(
         "Continue With Email address",
         style: GoogleFonts.roboto(
-            fontSize: 20,
+            fontSize: 23,
             color: Colors.white,
             letterSpacing: 0.168,
             fontWeight: FontWeight.w500),
@@ -169,13 +190,13 @@ Widget _already() {
     children: [
       Text(
         "Already have an account? ",
-        style: GoogleFonts.roboto(fontSize: 15),
+        style: GoogleFonts.roboto(fontSize: 18),
       ),
       InkWell(
         child: Text(
           "Sign In",
           style: GoogleFonts.roboto(
-              fontSize: 15,
+              fontSize: 18,
               fontWeight: FontWeight.bold,
               decoration: TextDecoration.underline),
         ),

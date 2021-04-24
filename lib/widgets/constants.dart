@@ -13,12 +13,17 @@ class UIGuide {
   static final String background = "assets/images/background.jpg";
   static final String logo = "assets/images/Logo.png";
 
-  // Images
+  // Social Logos
+  static final String fb = "assets/images/fblogo.png";
+  static final String gplus = "assets/images/gplus.png";
 
+  // Images
   // ignore: non_constant_identifier_names
   static final String lighthouse_image = "assets/images/lighthouse.png";
   // ignore: non_constant_identifier_names
   static final String link_image = "assets/images/link.png";
+  // ignore: non_constant_identifier_names
+  static final String link_head = "assets/images/linkhead.png";
 
   // Global Colors
   static const Color WHITE = Colors.white;

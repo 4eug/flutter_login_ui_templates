@@ -24,7 +24,6 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  flutter_svg: ^0.22.0
   google_fonts: ^2.0.0
   page_transition: ^1.1.7+6
 
@@ -45,7 +44,6 @@ flutter:
   assets:
     - assets/images/
     - assets/ui/
-    - assets/svg/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see

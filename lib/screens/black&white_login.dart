@@ -15,6 +15,7 @@ class _BlackWhiteLoginState extends State<BlackWhiteLogin> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
+        physics: NeverScrollableScrollPhysics(),
         child: Stack(children: [
           Container(
             padding: EdgeInsets.symmetric(horizontal: 40, vertical: 120),

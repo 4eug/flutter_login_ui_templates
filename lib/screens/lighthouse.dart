@@ -16,6 +16,7 @@ class _LightHouseLoginState extends State<LightHouseLogin> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
+        physics: NeverScrollableScrollPhysics(),
         child: Stack(
           children: [
             Container(

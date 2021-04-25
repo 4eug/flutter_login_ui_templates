@@ -15,6 +15,7 @@ class _LinkLoginState extends State<LinkLogin> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
+        physics: NeverScrollableScrollPhysics(),
         child: Stack(
           children: [
             Container(
@@ -64,7 +65,11 @@ class _LinkLoginState extends State<LinkLogin> {
                   _inputField1(),
                   _inputField2(),
                   SizedBox(height: SizeConfig.blockSizeVertical * 1.5),
-                  _loginbtn(context)
+                  _loginbtn(context),
+                  SizedBox(height: SizeConfig.blockSizeVertical * 1),
+                  _forgotPass(),
+                  SizedBox(height: SizeConfig.blockSizeVertical * 1),
+                  _switchbtn(context)
                 ],
               ),
             )
@@ -128,30 +133,63 @@ Widget _inputField2() {
 }
 
 Widget _loginbtn(context) {
+  // ignore: deprecated_member_use
+  return FlatButton(
+    onPressed: () => {},
+    padding: EdgeInsets.symmetric(vertical: 18, horizontal: 140),
+    shape: new RoundedRectangleBorder(
+      borderRadius: new BorderRadius.circular(15.0),
+    ),
+    child: Text(
+      "LOGIN",
+      style: GoogleFonts.roboto(
+          fontSize: 23,
+          color: Colors.white,
+          letterSpacing: 0.168,
+          fontWeight: FontWeight.w500),
+    ),
+    color: Colors.blue,
+  );
+}
+
+Widget _forgotPass() {
+  return Row(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Text(
+          "Forgot Password? ",
+          style: GoogleFonts.roboto(
+              fontSize: 15, color: Colors.blue, fontWeight: FontWeight.w500),
+        ),
+      ),
+    ],
+  );
+}
+
+Widget _switchbtn(context) {
   return Container(
-    width: double.infinity,
+    decoration: BoxDecoration(
+        color: Colors.black,
+        border: Border.all(width: 0.5),
+        borderRadius: BorderRadius.all(Radius.circular(15))),
     // ignore: deprecated_member_use
-    child: RaisedButton(
+    child: FlatButton(
       onPressed: () => {},
-      padding: EdgeInsets.symmetric(vertical: 20),
+      padding: EdgeInsets.symmetric(vertical: 18, horizontal: 85),
       shape: new RoundedRectangleBorder(
-        borderRadius: new BorderRadius.circular(30.0),
+        borderRadius: new BorderRadius.circular(15.0),
       ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        mainAxisSize: MainAxisSize.max,
-        children: [
-          Text(
-            "LOGIN",
-            style: GoogleFonts.roboto(
-                fontSize: 23,
-                color: Colors.white,
-                letterSpacing: 0.168,
-                fontWeight: FontWeight.w500),
-          ),
-        ],
+      child: Text(
+        "SWITCH ACCOUNT",
+        style: GoogleFonts.roboto(
+            fontSize: 23,
+            color: Colors.black,
+            letterSpacing: 0.168,
+            fontWeight: FontWeight.w500),
       ),
-      color: Colors.blue,
+      color: Colors.white,
     ),
   );
 }

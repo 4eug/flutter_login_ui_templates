@@ -30,7 +30,7 @@ class _GrappleLoginState extends State<GrappleLogin> {
                     children: [
                       Text(
                         "Grapple",
-                        style: GoogleFonts.roboto(
+                        style: GoogleFonts.poppins(
                           fontSize: 40,
                           color: Colors.blue,
                           fontWeight: FontWeight.w500,
@@ -45,7 +45,7 @@ class _GrappleLoginState extends State<GrappleLogin> {
                     children: [
                       Text(
                         "Enter your login details to ",
-                        style: GoogleFonts.roboto(
+                        style: GoogleFonts.montserrat(
                           fontSize: 25,
                           color: Colors.greenAccent,
                           fontWeight: FontWeight.w500,
@@ -198,7 +198,7 @@ Widget _loginbtn(context) {
     ),
     child: Text(
       "LOG IN",
-      style: GoogleFonts.roboto(
+      style: GoogleFonts.montserrat(
           fontSize: 23,
           color: Colors.white,
           letterSpacing: 0.168,
@@ -214,7 +214,7 @@ Widget _passCode() {
     children: [
       Text(
         "i didn/t receive the code ",
-        style: GoogleFonts.roboto(fontSize: 20, color: Colors.greenAccent),
+        style: GoogleFonts.montserrat(fontSize: 20, color: Colors.greenAccent),
       ),
       InkWell(
         child: Text(

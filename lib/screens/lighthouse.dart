@@ -40,7 +40,7 @@ class _LightHouseLoginState extends State<LightHouseLogin> {
                     children: [
                       Text(
                         "Flutter Login Template",
-                        style: GoogleFonts.roboto(
+                        style: GoogleFonts.poppins(
                           fontSize: 30,
                           color: Colors.black,
                           fontWeight: FontWeight.w500,
@@ -55,7 +55,7 @@ class _LightHouseLoginState extends State<LightHouseLogin> {
                     children: [
                       Text(
                         "Login Ui easy to use",
-                        style: GoogleFonts.roboto(
+                        style: GoogleFonts.poppins(
                           fontSize: 20,
                           color: Colors.black,
                           fontWeight: FontWeight.w300,
@@ -70,7 +70,7 @@ class _LightHouseLoginState extends State<LightHouseLogin> {
                     children: [
                       Text(
                         "for your next mobile project.",
-                        style: GoogleFonts.roboto(
+                        style: GoogleFonts.poppins(
                           fontSize: 20,
                           color: Colors.black,
                           fontWeight: FontWeight.w300,
@@ -116,7 +116,7 @@ Widget _googlelogin(context) {
           ),
           Text(
             "Continue With Google +",
-            style: GoogleFonts.roboto(
+            style: GoogleFonts.poppins(
                 fontSize: 23,
                 color: Colors.white,
                 letterSpacing: 0.168,
@@ -149,7 +149,7 @@ Widget _fblogin(context) {
           ),
           Text(
             "Continue With Facebook",
-            style: GoogleFonts.roboto(
+            style: GoogleFonts.poppins(
                 fontSize: 23,
                 color: Colors.white,
                 letterSpacing: 0.168,
@@ -174,7 +174,7 @@ Widget _emaillogin(context) {
       ),
       child: Text(
         "Continue With Email address",
-        style: GoogleFonts.roboto(
+        style: GoogleFonts.poppins(
             fontSize: 23,
             color: Colors.white,
             letterSpacing: 0.168,
@@ -191,12 +191,12 @@ Widget _already() {
     children: [
       Text(
         "Already have an account? ",
-        style: GoogleFonts.roboto(fontSize: 18),
+        style: GoogleFonts.poppins(fontSize: 18),
       ),
       InkWell(
         child: Text(
           "Sign In",
-          style: GoogleFonts.roboto(
+          style: GoogleFonts.poppins(
               fontSize: 18,
               fontWeight: FontWeight.bold,
               decoration: TextDecoration.underline),

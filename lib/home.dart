@@ -26,13 +26,15 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget get _appBar => new AppBar(
-        title: Text(
-          "Flutter Login Ui",
-          style: TextStyle(fontWeight: FontWeight.w400),
+        title: Center(
+          child: Text(
+            "Flutter Login Ui",
+            style: TextStyle(fontWeight: FontWeight.w400),
+          ),
         ),
         actions: <Widget>[
           IconButton(
-            icon: Icon(multiple ? Icons.dashboard : Icons.view_agenda),
+            icon: Icon(multiple ? Icons.dashboard_outlined : Icons.view_agenda),
             onPressed: () {
               setState(() {
                 multiple = !multiple;

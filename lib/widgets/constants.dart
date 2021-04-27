@@ -24,6 +24,8 @@ class UIGuide {
   static final String link_image = "assets/images/link.png";
   // ignore: non_constant_identifier_names
   static final String link_head = "assets/images/linkhead.png";
+  // ignore: non_constant_identifier_names
+  static final String pirple_img = "assets/images/pirple_img.jpg";
 
   // Global Colors
   static const Color WHITE = Colors.white;

@@ -32,7 +32,7 @@ class _GrappleLoginState extends State<GrappleLogin> {
                         "Grapple",
                         style: GoogleFonts.poppins(
                           fontSize: 40,
-                          color: Colors.blue,
+                          color: Color(0xff205072),
                           fontWeight: FontWeight.w500,
                         ),
                       )

@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login_template_ui/home_list.dart';
-import 'package:flutter_login_template_ui/theme.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -36,24 +33,14 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         actions: <Widget>[
-          // IconButton(
-          //   icon: Icon(multiple ? Icons.dashboard_outlined : Icons.view_agenda),
-          //   onPressed: () {
-          //     setState(() {
-          //       multiple = !multiple;
-          //     });
-          //   },
-          // ),
-          Consumer<ThemeNotifier>(
-              builder: (context, notifier, child) => IconButton(
-                  icon: notifier.isDarkTheme
-                      ? FaIcon(
-                          FontAwesomeIcons.moon,
-                          size: 20,
-                          color: Colors.white,
-                        )
-                      : Icon(Icons.wb_sunny),
-                  onPressed: () => {notifier.toggleTheme()}))
+          IconButton(
+            icon: Icon(multiple ? Icons.dashboard_outlined : Icons.view_agenda),
+            onPressed: () {
+              setState(() {
+                multiple = !multiple;
+              });
+            },
+          ),
         ],
       );
 

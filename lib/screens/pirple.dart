@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_login_template_ui/utils/config.dart';
 import 'package:flutter_login_template_ui/widgets/constants.dart';
 
 class PirpleLogin extends StatefulWidget {
@@ -17,13 +18,17 @@ class _PirpleLoginState extends State<PirpleLogin> {
         child: Stack(
           children: [
             Container(
-              padding: EdgeInsets.symmetric(vertical: 100, horizontal: 30),
-              color: Colors.black,
+              
               width: double.infinity,
               child: Column(
                 children: [
                   Padding(padding: EdgeInsets.only()),
-                  Image.asset(UIGuide.pirple_img)
+                  Image.asset(
+                    UIGuide.pirple_img,
+                    height: SizeConfig.blockSizeVertical * 100,
+                    width: SizeConfig.blockSizeHorizontal * 100,
+                    fit: BoxFit.fitHeight,
+                  )
                 ],
               ),
             )

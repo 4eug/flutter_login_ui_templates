@@ -31,15 +31,28 @@ class _PirpleLoginState extends State<PirpleLogin> {
                 ),
               ),
             ),
+            Positioned(
+              top: SizeConfig.blockSizeVertical * 2,
+              left: SizeConfig.blockSizeHorizontal * 4,
+              child: Container(
+                padding: EdgeInsets.symmetric(vertical: 40, horizontal: 28),
+                child: Image.asset(
+                  UIGuide.logo,
+                  height: SizeConfig.blockSizeVertical * 10,
+                  width: SizeConfig.blockSizeHorizontal * 20,
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
             Column(
               children: [
                 Padding(
                     padding:
-                        EdgeInsets.symmetric(vertical: 40, horizontal: 120)),
+                        EdgeInsets.symmetric(vertical: 80, horizontal: 130)),
                 Text(
                   "Pirple Login UI",
                   style: GoogleFonts.montserrat(
-                    fontSize: 30,
+                    fontSize: 25,
                     color: Colors.white,
                     fontWeight: FontWeight.w600,
                   ),

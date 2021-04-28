@@ -22,7 +22,7 @@ class _PirpleLoginState extends State<PirpleLogin> {
               color: Colors.black,
               width: double.infinity,
               child: Opacity(
-                opacity: .5,
+                opacity: .4,
                 child: Image.asset(
                   UIGuide.pirple_img,
                   height: SizeConfig.blockSizeVertical * 100,
@@ -48,7 +48,7 @@ class _PirpleLoginState extends State<PirpleLogin> {
               children: [
                 Padding(
                     padding:
-                        EdgeInsets.symmetric(vertical: 80, horizontal: 130)),
+                        EdgeInsets.symmetric(vertical: 75, horizontal: 120)),
                 Text(
                   "Pirple Login UI",
                   style: GoogleFonts.montserrat(
@@ -56,8 +56,15 @@ class _PirpleLoginState extends State<PirpleLogin> {
                     color: Colors.white,
                     fontWeight: FontWeight.w600,
                   ),
-                )
+                ),
+                SizedBox(),
               ],
+            ),
+            Positioned(
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(20, 200, 150, 100),
+                child: tabs(),
+              ),
             )
           ],
         ),
@@ -69,6 +76,25 @@ class _PirpleLoginState extends State<PirpleLogin> {
 Widget tabs() {
   return DefaultTabController(
     length: 2,
-    child: TabBar(tabs: [Tab(text: "Sign in"), Tab(text: "Sign up")]),
+    child: TabBar(
+      tabs: [
+        Tab(
+          child: Text(
+            "Sign in",
+            style: GoogleFonts.montserrat(fontSize: 20),
+          ),
+        ),
+        Tab(
+          child: Text(
+            "Sign up",
+            style: GoogleFonts.montserrat(
+              fontSize: 20,
+            ),
+          ),
+        ),
+      ],
+      labelColor: Colors.blue,
+      unselectedLabelColor: Colors.grey,
+    ),
   );
 }

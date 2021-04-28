@@ -55,6 +55,9 @@ class _PirpleLoginState extends State<PirpleLogin> {
               ),
             ),
             SizedBox(height: SizeConfig.blockSizeVertical * 5),
+            TabBar(
+              tabs: [Tab(text: "Sign in"), Tab(text: "Sign up")],
+            )
           ],
         ),
       ),

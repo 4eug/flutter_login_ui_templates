@@ -21,46 +21,41 @@ class _PirpleLoginState extends State<PirpleLogin> {
             Container(
               color: Colors.black,
               width: double.infinity,
-              child: Column(
-                children: [
-                  Padding(padding: EdgeInsets.only()),
-                  ColorFiltered(
-                    child: Image.asset(
-                      UIGuide.pirple_img,
-                      height: SizeConfig.blockSizeVertical * 100,
-                      width: SizeConfig.blockSizeHorizontal * 100,
-                      fit: BoxFit.fitHeight,
-                    ),
-                    colorFilter: ColorFilter.mode(
-                        Colors.black.withOpacity(0.5), BlendMode.dstATop),
-                  ),
-                ],
+              child: Opacity(
+                opacity: .5,
+                child: Image.asset(
+                  UIGuide.pirple_img,
+                  height: SizeConfig.blockSizeVertical * 100,
+                  width: SizeConfig.blockSizeHorizontal * 100,
+                  fit: BoxFit.fitHeight,
+                ),
               ),
             ),
-            Container(
-              padding: EdgeInsets.symmetric(horizontal: 25, vertical: 200),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Text(
-                    "Pirple Login Ui",
-                    style: GoogleFonts.poppins(
-                      fontSize: 25,
-                      color: Colors.white,
-                      fontWeight: FontWeight.w500,
-                    ),
+            Column(
+              children: [
+                Padding(
+                    padding:
+                        EdgeInsets.symmetric(vertical: 40, horizontal: 120)),
+                Text(
+                  "Pirple Login UI",
+                  style: GoogleFonts.montserrat(
+                    fontSize: 30,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w600,
                   ),
-                ],
-              ),
-            ),
-            SizedBox(height: SizeConfig.blockSizeVertical * 5),
-            TabBar(
-              tabs: [Tab(text: "Sign in"), Tab(text: "Sign up")],
+                )
+              ],
             )
           ],
         ),
       ),
     );
   }
+}
+
+Widget tabs() {
+  return DefaultTabController(
+    length: 2,
+    child: TabBar(tabs: [Tab(text: "Sign in"), Tab(text: "Sign up")]),
+  );
 }

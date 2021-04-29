@@ -65,7 +65,8 @@ class _PirpleLoginState extends State<PirpleLogin> {
                 padding: EdgeInsets.fromLTRB(20, 200, 150, 100),
                 child: tabs(),
               ),
-            )
+            ),
+            _emailFiled()
           ],
         ),
       ),
@@ -95,6 +96,36 @@ Widget tabs() {
       ],
       labelColor: Colors.blue,
       unselectedLabelColor: Colors.grey,
+    ),
+  );
+}
+
+Widget _emailFiled() {
+  return Container(
+    padding: EdgeInsets.only(top: 295, left: 20, right: 10),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        TextField(
+          decoration: InputDecoration(
+              hintText: "Email address",
+              hintStyle: GoogleFonts.montserrat(
+                  fontWeight: FontWeight.w300, color: Colors.white),
+              focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white))),
+          keyboardType: TextInputType.emailAddress,
+        ),
+        SizedBox(height: 30),
+        TextField(
+          decoration: InputDecoration(
+              hintText: "Enter Password",
+              hintStyle: GoogleFonts.montserrat(
+                  fontWeight: FontWeight.w300, color: Colors.white),
+              focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white))),
+          obscureText: true,
+        ),
+      ],
     ),
   );
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login_template_ui/utils/config.dart';
 import 'package:flutter_login_template_ui/widgets/constants.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class PirpleLogin extends StatefulWidget {
@@ -179,7 +180,77 @@ Widget _emailFiled() {
                   fontWeight: FontWeight.w500),
             ),
           ],
-        )
+        ),
+        SizedBox(height: 50),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Text(
+              "Sign in with",
+              style: GoogleFonts.roboto(
+                  fontSize: 20,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500),
+            ),
+          ],
+        ),
+        SizedBox(height: 30),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+                margin: EdgeInsets.all(10),
+                width: 50,
+                height: 50,
+                // ignore: deprecated_member_use
+                child: FlatButton(
+                  onPressed: () {},
+                  shape: new RoundedRectangleBorder(
+                    borderRadius: new BorderRadius.circular(10.0),
+                  ),
+                  child: FaIcon(
+                    FontAwesomeIcons.facebookF,
+                    color: Colors.white,
+                  ),
+                  color: Colors.blueGrey.withOpacity(0.9),
+                )),
+            SizedBox(width: 5),
+            Container(
+                margin: EdgeInsets.all(10),
+                width: 50,
+                height: 50,
+                // ignore: deprecated_member_use
+                child: FlatButton(
+                  onPressed: () {},
+                  shape: new RoundedRectangleBorder(
+                    borderRadius: new BorderRadius.circular(10.0),
+                  ),
+                  child: FaIcon(
+                    FontAwesomeIcons.twitter,
+                    color: Colors.white,
+                  ),
+                  color: Colors.blueGrey.withOpacity(0.9),
+                )),
+            SizedBox(width: 5),
+            Container(
+                margin: EdgeInsets.all(10),
+                width: 50,
+                height: 50,
+                // ignore: deprecated_member_use
+                child: FlatButton(
+                  onPressed: () {},
+                  shape: new RoundedRectangleBorder(
+                    borderRadius: new BorderRadius.circular(10.0),
+                  ),
+                  child: FaIcon(
+                    FontAwesomeIcons.googlePlusG,
+                    color: Colors.white,
+                  ),
+                  color: Colors.blueGrey.withOpacity(0.9),
+                )),
+          ],
+        ),
+        SizedBox(width: 5),
       ],
     ),
   );

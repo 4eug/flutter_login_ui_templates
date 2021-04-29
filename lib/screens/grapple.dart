@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login_template_ui/utils/config.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class GrappleLogin extends StatefulWidget {
@@ -60,7 +61,7 @@ class _GrappleLoginState extends State<GrappleLogin> {
                     children: [
                       Text(
                         "access your account ",
-                        style: GoogleFonts.roboto(
+                        style: GoogleFonts.montserrat(
                           fontSize: 25,
                           color: Colors.greenAccent,
                           fontWeight: FontWeight.w500,
@@ -103,22 +104,21 @@ Widget _inputField1() {
     ),
     margin: EdgeInsets.only(bottom: 20),
     child: TextField(
-      style: TextStyle(
-        fontFamily: 'Poppins',
-        fontSize: 20,
-        color: Colors.grey,
-        letterSpacing: 0.24,
-        fontWeight: FontWeight.w200,
-      ),
+      style: GoogleFonts.poppins(
+          fontSize: 20,
+          color: Colors.black,
+          letterSpacing: 0.24,
+          fontWeight: FontWeight.w500),
       decoration: InputDecoration(
-        contentPadding: EdgeInsets.symmetric(vertical: 25),
-        hintStyle: TextStyle(
-          color: Color(0xffA6B0BD),
-        ),
+        hintText: "Email address",
         fillColor: Colors.white,
         filled: true,
-        prefixIconConstraints: BoxConstraints(
-          minWidth: 75,
+        suffixIcon: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: FaIcon(
+            FontAwesomeIcons.checkCircle,
+            color: Colors.greenAccent,
+          ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.all(
@@ -154,22 +154,24 @@ Widget _inputField2() {
     ),
     margin: EdgeInsets.only(bottom: 20),
     child: TextField(
-      style: TextStyle(
-        fontFamily: 'Poppins',
-        fontSize: 20,
-        color: Colors.grey,
-        letterSpacing: 0.24,
-        fontWeight: FontWeight.w200,
-      ),
+      style: GoogleFonts.poppins(
+          fontSize: 20,
+          color: Colors.black,
+          letterSpacing: 0.24,
+          fontWeight: FontWeight.w500),
       decoration: InputDecoration(
-        contentPadding: EdgeInsets.symmetric(vertical: 25),
+        hintText: "Password",
         hintStyle: TextStyle(
           color: Color(0xffA6B0BD),
         ),
         fillColor: Colors.white,
         filled: true,
-        prefixIconConstraints: BoxConstraints(
-          minWidth: 75,
+        suffixIcon: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: FaIcon(
+            FontAwesomeIcons.eye,
+            color: Color(0xffCDE0C9).withOpacity(0.9),
+          ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.all(
@@ -184,6 +186,7 @@ Widget _inputField2() {
           borderSide: BorderSide(color: Colors.white),
         ),
       ),
+      obscureText: true,
     ),
   );
 }
@@ -213,13 +216,13 @@ Widget _passCode() {
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
       Text(
-        "i didn/t receive the code ",
+        "I didn\'t receive the code ",
         style: GoogleFonts.montserrat(fontSize: 20, color: Colors.greenAccent),
       ),
       InkWell(
         child: Text(
           "Resend",
-          style: GoogleFonts.roboto(
+          style: GoogleFonts.montserrat(
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),

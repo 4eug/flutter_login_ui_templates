@@ -38,7 +38,7 @@ class _PirpleLoginState extends State<PirpleLogin> {
               child: Container(
                 padding: EdgeInsets.symmetric(vertical: 40, horizontal: 28),
                 child: Image.asset(
-                  UIGuide.logo,
+                  UIGuide.pirple_logo,
                   height: SizeConfig.blockSizeVertical * 9.5,
                   width: SizeConfig.blockSizeHorizontal * 19,
                   fit: BoxFit.fill,

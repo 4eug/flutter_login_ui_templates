@@ -12,10 +12,8 @@ class UIGuide {
   static final String reddit = "assets/ui/Reddit_login_ui.jpg";
   static final String background = "assets/images/background.jpg";
   static final String logo = "assets/images/Logo.png";
-
-  // Social Logos
-  static final String fb = "assets/images/fblogo.png";
-  static final String gplus = "assets/images/gplus.png";
+  // ignore: non_constant_identifier_names
+  static final String pirple_logo = "assets/images/pirple_logo.png";
 
   // Images
   // ignore: non_constant_identifier_names

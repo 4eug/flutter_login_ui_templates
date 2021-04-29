@@ -66,7 +66,7 @@ class _PirpleLoginState extends State<PirpleLogin> {
                 child: tabs(),
               ),
             ),
-            _emailFiled()
+            _emailFiled(),
           ],
         ),
       ),
@@ -114,20 +114,62 @@ Widget _emailFiled() {
               hintStyle: GoogleFonts.montserrat(
                   fontWeight: FontWeight.w300, color: Colors.white),
               enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white))),
+                  borderSide: BorderSide(color: Colors.grey))),
           keyboardType: TextInputType.emailAddress,
         ),
         SizedBox(height: 30),
         TextField(
           decoration: InputDecoration(
+              suffixIcon: Icon(
+                Icons.remove_red_eye,
+                color: Colors.grey,
+              ),
               hintText: "Enter Password",
               fillColor: Colors.white,
               hintStyle: GoogleFonts.montserrat(
                   fontWeight: FontWeight.w300, color: Colors.white),
               enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white))),
+                  borderSide: BorderSide(color: Colors.grey))),
           obscureText: true,
         ),
+        SizedBox(height: 30),
+        Container(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              // ignore: deprecated_member_use
+              FlatButton(
+                  padding: EdgeInsets.symmetric(vertical: 18, horizontal: 130),
+                  onPressed: () {},
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8)),
+                  child: Text(
+                    "SIGN IN",
+                    style: GoogleFonts.montserrat(
+                        fontSize: 20,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w500),
+                  ),
+                  color: Colors.blueGrey.withOpacity(0.9))
+            ],
+          ),
+        ),
+        SizedBox(height: 20),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Text(
+                "Remember me",
+                style: GoogleFonts.roboto(
+                    fontSize: 15,
+                    color: Colors.blue,
+                    fontWeight: FontWeight.w500),
+              ),
+            ),
+          ],
+        )
       ],
     ),
   );

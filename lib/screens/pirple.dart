@@ -102,16 +102,18 @@ Widget tabs() {
 
 Widget _emailFiled() {
   return Container(
-    padding: EdgeInsets.only(top: 295, left: 20, right: 10),
+    margin: EdgeInsets.all(40),
+    padding: EdgeInsets.only(top: 235, left: 5, right: 5),
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         TextField(
           decoration: InputDecoration(
+              focusColor: Colors.white,
               hintText: "Email address",
               hintStyle: GoogleFonts.montserrat(
                   fontWeight: FontWeight.w300, color: Colors.white),
-              focusedBorder: UnderlineInputBorder(
+              enabledBorder: UnderlineInputBorder(
                   borderSide: BorderSide(color: Colors.white))),
           keyboardType: TextInputType.emailAddress,
         ),
@@ -119,9 +121,10 @@ Widget _emailFiled() {
         TextField(
           decoration: InputDecoration(
               hintText: "Enter Password",
+              fillColor: Colors.white,
               hintStyle: GoogleFonts.montserrat(
                   fontWeight: FontWeight.w300, color: Colors.white),
-              focusedBorder: UnderlineInputBorder(
+              enabledBorder: UnderlineInputBorder(
                   borderSide: BorderSide(color: Colors.white))),
           obscureText: true,
         ),

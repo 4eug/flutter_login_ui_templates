@@ -61,7 +61,7 @@ class _LoginState extends State<Login> {
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Text(
-                        "sadipscing elitr, sed diam nonumy eirmod  ",
+                        "sadipscing elitr, sed diam nonumy eirmod",
                         style: GoogleFonts.poppins(
                           fontSize: 20,
                           color: Color(0xff07446C),

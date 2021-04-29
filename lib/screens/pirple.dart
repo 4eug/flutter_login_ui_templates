@@ -39,8 +39,8 @@ class _PirpleLoginState extends State<PirpleLogin> {
                 padding: EdgeInsets.symmetric(vertical: 40, horizontal: 28),
                 child: Image.asset(
                   UIGuide.logo,
-                  height: SizeConfig.blockSizeVertical * 10,
-                  width: SizeConfig.blockSizeHorizontal * 20,
+                  height: SizeConfig.blockSizeVertical * 9.5,
+                  width: SizeConfig.blockSizeHorizontal * 19,
                   fit: BoxFit.fill,
                 ),
               ),
@@ -199,7 +199,6 @@ Widget _emailFiled() {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-                margin: EdgeInsets.all(10),
                 width: 50,
                 height: 50,
                 // ignore: deprecated_member_use
@@ -214,9 +213,8 @@ Widget _emailFiled() {
                   ),
                   color: Colors.blueGrey.withOpacity(0.9),
                 )),
-            SizedBox(width: 5),
+            SizedBox(width: 10),
             Container(
-                margin: EdgeInsets.all(10),
                 width: 50,
                 height: 50,
                 // ignore: deprecated_member_use
@@ -231,9 +229,8 @@ Widget _emailFiled() {
                   ),
                   color: Colors.blueGrey.withOpacity(0.9),
                 )),
-            SizedBox(width: 5),
+            SizedBox(width: 10),
             Container(
-                margin: EdgeInsets.all(10),
                 width: 50,
                 height: 50,
                 // ignore: deprecated_member_use
@@ -250,8 +247,22 @@ Widget _emailFiled() {
                 )),
           ],
         ),
-        SizedBox(width: 5),
+        SizedBox(height: 40),
+        _forgotPass()
       ],
     ),
+  );
+}
+
+Widget _forgotPass() {
+  return Row(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      Text(
+        "Forgot Password? ",
+        style: GoogleFonts.roboto(
+            fontSize: 18, color: Colors.white, fontWeight: FontWeight.w500),
+      ),
+    ],
   );
 }

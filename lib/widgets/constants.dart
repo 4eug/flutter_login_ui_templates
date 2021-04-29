@@ -6,7 +6,7 @@ class UIGuide {
   static final String blackwhite = "assets/ui/Black&White_login_ui.jpg";
   static final String lighthouse = "assets/ui/Lighthouse_login_ui.jpg";
   static final String link = "assets/ui/Link_login_ui.jpg";
-  static final String login = "assets/ui/Login_login_ui.jpg";
+  static final String login = "assets/ui/Login_ui.jpg";
   static final String patterns = "assets/ui/Patterns_login_ui.jpg";
   static final String pirple = "assets/ui/Pirple_login_ui.jpg";
   static final String reddit = "assets/ui/Reddit_login_ui.jpg";

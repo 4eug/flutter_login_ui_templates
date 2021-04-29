@@ -156,17 +156,27 @@ Widget _emailFiled() {
         ),
         SizedBox(height: 20),
         Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: Text(
-                "Remember me",
-                style: GoogleFonts.roboto(
-                    fontSize: 15,
-                    color: Colors.blue,
-                    fontWeight: FontWeight.w500),
+            ClipOval(
+                child: Material(
+              color: Colors.blue,
+              child: InkWell(
+                child: Icon(
+                  Icons.done,
+                  color: Colors.white,
+                  size: 20,
+                ),
+                onTap: () {},
               ),
+            )),
+            SizedBox(width: 6),
+            Text(
+              "Remember me",
+              style: GoogleFonts.roboto(
+                  fontSize: 20,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500),
             ),
           ],
         )

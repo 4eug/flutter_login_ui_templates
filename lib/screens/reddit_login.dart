@@ -23,21 +23,44 @@ class _RedditLoginState extends State<RedditLogin> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: [
-          SizedBox.expand(
-            child: FittedBox(
-              fit: BoxFit.cover,
-              child: SizedBox(
-                width: _controller.value.size?.width ?? 0,
-                height: _controller.value.size?.height ?? 0,
-                child: VideoPlayer(_controller),
+    return MaterialApp(
+      home: Scaffold(
+        body: Stack(
+          children: <Widget>[
+            SizedBox.expand(
+              child: FittedBox(
+                fit: BoxFit.cover,
+                child: SizedBox(
+                  width: _controller.value.size?.width ?? 0,
+                  height: _controller.value.size?.height ?? 0,
+                  child: VideoPlayer(_controller),
+                ),
               ),
             ),
-          )
-        ],
+            TabWidget()
+          ],
+        ),
       ),
+    );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _controller.dispose();
+  }
+}
+
+class TabWidget extends StatelessWidget {
+  const TabWidget({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [Container()],
     );
   }
 }

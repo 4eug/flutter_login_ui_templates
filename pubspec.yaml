@@ -27,6 +27,7 @@ dependencies:
   font_awesome_flutter: ^9.0.0
   google_fonts: ^2.0.0
   page_transition: ^1.1.7+6
+  video_player: ^2.1.1
 
 dev_dependencies:
   flutter_test:

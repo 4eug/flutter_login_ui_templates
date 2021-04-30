@@ -39,7 +39,7 @@ class _RedditLoginState extends State<RedditLogin> {
                 ),
               ),
             ),
-            // TabWidget()
+            TabWidget()
           ],
         ),
       ),
@@ -62,11 +62,47 @@ class TabWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: [
+      children: <Widget>[
         Container(
-          margin: EdgeInsets.only(),
-          child: Column(),
-        )
+          padding: EdgeInsets.all(16),
+          width: 300,
+          height: 250,
+          color: Colors.white.withAlpha(400),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              TextField(
+                decoration: InputDecoration(
+                    hintText: 'Username',
+                    hintStyle: TextStyle(fontWeight: FontWeight.bold)),
+              ),
+              TextField(
+                decoration: InputDecoration(
+                  hintText: 'Password',
+                  hintStyle: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ),
+              Row(
+                children: [
+                  // ignore: deprecated_member_use
+                  RaisedButton(
+                    child: Text('Sign-In'),
+                    onPressed: () {},
+                  ),
+
+                  SizedBox(
+                    width: 20,
+                  ),
+                  // ignore: deprecated_member_use
+                  RaisedButton(
+                    child: Text('Sign-Up'),
+                    onPressed: () {},
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
       ],
     );
   }

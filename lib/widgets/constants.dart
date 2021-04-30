@@ -25,6 +25,9 @@ class UIGuide {
   // ignore: non_constant_identifier_names
   static final String pirple_img = "assets/images/pirple_img.jpg";
 
+  // Videos
+  static final String backgroundvid = "assets/videos/backgroundvid.mp4";
+
   // Global Colors
   static const Color WHITE = Colors.white;
   static const Color BLACK = Colors.black;

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_login_template_ui/widgets/constants.dart';
 import 'package:video_player/video_player.dart';
 
 class RedditLogin extends StatefulWidget {
@@ -12,7 +13,7 @@ class _RedditLoginState extends State<RedditLogin> {
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.asset("")
+    _controller = VideoPlayerController.asset(UIGuide.backgroundvid)
       ..initialize().then((_) {
         _controller.play();
         _controller.setLooping(true);
@@ -24,6 +25,7 @@ class _RedditLoginState extends State<RedditLogin> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Stack(
           children: <Widget>[
@@ -37,7 +39,7 @@ class _RedditLoginState extends State<RedditLogin> {
                 ),
               ),
             ),
-            TabWidget()
+            // TabWidget()
           ],
         ),
       ),
@@ -60,7 +62,12 @@ class TabWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: [Container()],
+      children: [
+        Container(
+          margin: EdgeInsets.only(),
+          child: Column(),
+        )
+      ],
     );
   }
 }

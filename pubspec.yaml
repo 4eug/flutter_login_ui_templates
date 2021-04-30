@@ -27,7 +27,7 @@ dependencies:
   font_awesome_flutter: ^9.0.0
   google_fonts: ^2.0.0
   page_transition: ^1.1.7+6
-  video_player: ^2.1.1
+  video_player: any
 
 dev_dependencies:
   flutter_test:
@@ -46,6 +46,7 @@ flutter:
   assets:
     - assets/images/
     - assets/ui/
+    - assets/videos/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see

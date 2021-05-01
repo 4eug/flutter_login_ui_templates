@@ -98,7 +98,7 @@ Widget tabWidget() {
               ),
             ],
           ),
-          color: Colors.black,
+          color: Colors.black.withOpacity(0.5),
         ),
       ),
       SizedBox(height: 20),
@@ -133,7 +133,7 @@ Widget tabWidget() {
               ),
             ],
           ),
-          color: Colors.black,
+          color: Colors.black.withOpacity(0.5),
         ),
       ),
       SizedBox(height: 20),
@@ -168,7 +168,7 @@ Widget tabWidget() {
               ),
             ],
           ),
-          color: Colors.black,
+          color: Colors.black.withOpacity(0.5),
         ),
       ),
       SizedBox(height: 15),
@@ -182,7 +182,7 @@ Widget _already() {
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
       Text(
-        "Already have an account? ",
+        "Already a Redditor? ",
         style: GoogleFonts.poppins(fontSize: 12, color: Colors.white),
       ),
       InkWell(
@@ -208,7 +208,7 @@ Widget _logo() {
         Padding(padding: EdgeInsets.only()),
         Center(
           child: Image.asset(
-            UIGuide.logo,
+            UIGuide.reddit_logo,
             height: SizeConfig.blockSizeVertical * 12,
             width: SizeConfig.blockSizeHorizontal * 100,
           ),

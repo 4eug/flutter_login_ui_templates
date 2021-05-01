@@ -47,7 +47,7 @@ class _RedditLoginState extends State<RedditLogin> {
               height: 50,
             ),
             Positioned(
-                top: SizeConfig.blockSizeVertical * 55,
+                top: SizeConfig.blockSizeVertical * 65,
                 left: SizeConfig.blockSizeHorizontal * 14,
                 child: Container(child: tabWidget()))
           ],
@@ -111,19 +111,22 @@ Widget tabWidget() {
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            mainAxisSize: MainAxisSize.max,
+            mainAxisSize: MainAxisSize.min,
             children: [
               FaIcon(
-                FontAwesomeIcons.facebookF,
+                FontAwesomeIcons.apple,
                 color: Colors.white,
               ),
-              Text(
-                "Continue With Facebook",
-                style: GoogleFonts.poppins(
-                    fontSize: 15,
-                    color: Colors.white,
-                    letterSpacing: 0.168,
-                    fontWeight: FontWeight.w500),
+              Padding(
+                padding: const EdgeInsets.all(6.0),
+                child: Text(
+                  "Sign up with Apple",
+                  style: GoogleFonts.poppins(
+                      fontSize: 15,
+                      color: Colors.white,
+                      letterSpacing: 0.168,
+                      fontWeight: FontWeight.w500),
+                ),
               ),
             ],
           ),
@@ -143,26 +146,29 @@ Widget tabWidget() {
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            mainAxisSize: MainAxisSize.max,
+            mainAxisSize: MainAxisSize.min,
             children: [
               FaIcon(
-                FontAwesomeIcons.facebookF,
+                Icons.email,
                 color: Colors.white,
               ),
-              Text(
-                "Continue With Facebook",
-                style: GoogleFonts.poppins(
-                    fontSize: 15,
-                    color: Colors.white,
-                    letterSpacing: 0.168,
-                    fontWeight: FontWeight.w500),
+              Padding(
+                padding: const EdgeInsets.all(6.0),
+                child: Text(
+                  "Sign up with email",
+                  style: GoogleFonts.poppins(
+                      fontSize: 15,
+                      color: Colors.white,
+                      letterSpacing: 0.168,
+                      fontWeight: FontWeight.w500),
+                ),
               ),
             ],
           ),
           color: Colors.black,
         ),
       ),
-      SizedBox(height: 100),
+      SizedBox(height: 15),
       _already()
     ],
   );
@@ -174,13 +180,13 @@ Widget _already() {
     children: [
       Text(
         "Already have an account? ",
-        style: GoogleFonts.poppins(fontSize: 18, color: Colors.white),
+        style: GoogleFonts.poppins(fontSize: 12, color: Colors.white),
       ),
       InkWell(
         child: Text(
           "Sign In",
           style: GoogleFonts.poppins(
-              fontSize: 18,
+              fontSize: 12,
               fontWeight: FontWeight.bold,
               decoration: TextDecoration.underline,
               color: Colors.white),

@@ -79,19 +79,22 @@ Widget tabWidget() {
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            mainAxisSize: MainAxisSize.max,
+            mainAxisSize: MainAxisSize.min,
             children: [
               FaIcon(
-                FontAwesomeIcons.facebookF,
+                FontAwesomeIcons.google,
                 color: Colors.white,
               ),
-              Text(
-                "Continue With Facebook",
-                style: GoogleFonts.poppins(
-                    fontSize: 15,
-                    color: Colors.white,
-                    letterSpacing: 0.168,
-                    fontWeight: FontWeight.w500),
+              Padding(
+                padding: const EdgeInsets.all(6.0),
+                child: Text(
+                  "Sign up with Google",
+                  style: GoogleFonts.poppins(
+                      fontSize: 15,
+                      color: Colors.white,
+                      letterSpacing: 0.168,
+                      fontWeight: FontWeight.w500),
+                ),
               ),
             ],
           ),

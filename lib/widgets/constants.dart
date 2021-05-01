@@ -14,6 +14,8 @@ class UIGuide {
   static final String logo = "assets/images/Logo.png";
   // ignore: non_constant_identifier_names
   static final String pirple_logo = "assets/images/pirple_logo.png";
+  // ignore: non_constant_identifier_names
+  static final String reddit_logo = "assets/images/reddit_logo.png";
 
   // Images
   // ignore: non_constant_identifier_names

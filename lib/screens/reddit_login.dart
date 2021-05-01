@@ -4,6 +4,7 @@ import 'package:flutter_login_template_ui/widgets/constants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:video_player/video_player.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class RedditLogin extends StatefulWidget {
   @override
@@ -49,7 +50,7 @@ class _RedditLoginState extends State<RedditLogin> {
               height: 50,
             ),
             Positioned(
-                top: SizeConfig.blockSizeVertical * 65,
+                top: SizeConfig.blockSizeVertical * 55,
                 left: SizeConfig.blockSizeHorizontal * 14,
                 child: Container(child: tabWidget()))
           ],
@@ -69,6 +70,49 @@ Widget tabWidget() {
   return Column(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
+      Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          Text(
+            "Dive into",
+            style: GoogleFonts.poppins(
+              fontSize: 30,
+              color: Colors.white,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+        ],
+      ),
+      Container(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.max,
+          children: [
+            SizedBox(
+              child: DefaultTextStyle(
+                style: GoogleFonts.montserrat(
+                  fontSize: 30,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500,
+                ),
+                child: AnimatedTextKit(
+                  animatedTexts: [
+                    FadeAnimatedText('anything'),
+                    FadeAnimatedText('r/Code'),
+                    FadeAnimatedText('r/Flutter'),
+                    FadeAnimatedText('Login Templates UI')
+                  ],
+                  repeatForever: true,
+                  pause: const Duration(milliseconds: 900),
+                  stopPauseOnTap: true,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+      SizedBox(height: 30),
       Container(
         width: 300,
         height: 50,

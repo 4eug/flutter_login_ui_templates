@@ -23,6 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  animated_text_kit: ^4.2.1
   cupertino_icons: ^1.0.2
   font_awesome_flutter: ^9.0.0
   google_fonts: ^2.0.0

@@ -102,25 +102,28 @@ Widget _googlelogin(context) {
     // ignore: deprecated_member_use
     child: RaisedButton(
       onPressed: () => {},
-      padding: EdgeInsets.symmetric(vertical: 20),
+      padding: EdgeInsets.symmetric(vertical: 10),
       shape: new RoundedRectangleBorder(
         borderRadius: new BorderRadius.circular(30.0),
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        mainAxisSize: MainAxisSize.min,
         children: [
           FaIcon(
             FontAwesomeIcons.googlePlusG,
             color: Colors.white,
           ),
-          Text(
-            "Continue With Google +",
-            style: GoogleFonts.poppins(
-                fontSize: 23,
-                color: Colors.white,
-                letterSpacing: 0.168,
-                fontWeight: FontWeight.w500),
+          Padding(
+            padding: const EdgeInsets.all(6.0),
+            child: Text(
+              "Continue With Google +",
+              style: GoogleFonts.poppins(
+                  fontSize: 23,
+                  color: Colors.white,
+                  letterSpacing: 0.168,
+                  fontWeight: FontWeight.w500),
+            ),
           ),
         ],
       ),
@@ -135,25 +138,28 @@ Widget _fblogin(context) {
     // ignore: deprecated_member_use
     child: RaisedButton(
       onPressed: () => {},
-      padding: EdgeInsets.symmetric(vertical: 20),
+      padding: EdgeInsets.symmetric(vertical: 10),
       shape: new RoundedRectangleBorder(
         borderRadius: new BorderRadius.circular(30.0),
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        mainAxisSize: MainAxisSize.min,
         children: [
           FaIcon(
             FontAwesomeIcons.facebookF,
             color: Colors.white,
           ),
-          Text(
-            "Continue With Facebook",
-            style: GoogleFonts.poppins(
-                fontSize: 23,
-                color: Colors.white,
-                letterSpacing: 0.168,
-                fontWeight: FontWeight.w500),
+          Padding(
+            padding: const EdgeInsets.all(6.0),
+            child: Text(
+              "Continue With Facebook",
+              style: GoogleFonts.poppins(
+                  fontSize: 23,
+                  color: Colors.white,
+                  letterSpacing: 0.168,
+                  fontWeight: FontWeight.w500),
+            ),
           ),
         ],
       ),
@@ -168,17 +174,20 @@ Widget _emaillogin(context) {
     // ignore: deprecated_member_use
     child: RaisedButton(
       onPressed: () => {},
-      padding: EdgeInsets.symmetric(vertical: 20),
+      padding: EdgeInsets.symmetric(vertical: 10),
       shape: new RoundedRectangleBorder(
         borderRadius: new BorderRadius.circular(30.0),
       ),
-      child: Text(
-        "Continue With Email address",
-        style: GoogleFonts.poppins(
-            fontSize: 23,
-            color: Colors.white,
-            letterSpacing: 0.168,
-            fontWeight: FontWeight.w500),
+      child: Padding(
+        padding: const EdgeInsets.all(6.0),
+        child: Text(
+          "Continue With Email address",
+          style: GoogleFonts.poppins(
+              fontSize: 23,
+              color: Colors.white,
+              letterSpacing: 0.168,
+              fontWeight: FontWeight.w500),
+        ),
       ),
       color: Colors.black,
     ),

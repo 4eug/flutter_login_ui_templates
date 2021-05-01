@@ -84,35 +84,34 @@ Widget tabWidget() {
           ),
         ],
       ),
-      Container(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          mainAxisSize: MainAxisSize.max,
-          children: [
-            SizedBox(
-              child: DefaultTextStyle(
-                style: GoogleFonts.montserrat(
-                  fontSize: 30,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w500,
-                ),
-                child: AnimatedTextKit(
-                  animatedTexts: [
-                    FadeAnimatedText('anything'),
-                    FadeAnimatedText('r/Code'),
-                    FadeAnimatedText('r/Flutter'),
-                    FadeAnimatedText('Login Templates UI')
-                  ],
-                  repeatForever: true,
-                  pause: const Duration(milliseconds: 900),
-                  stopPauseOnTap: true,
-                ),
+      Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          SizedBox(
+            height: 30,
+            child: DefaultTextStyle(
+              style: GoogleFonts.montserrat(
+                fontSize: 30,
+                color: Colors.white,
+                fontWeight: FontWeight.w500,
+              ),
+              child: AnimatedTextKit(
+                animatedTexts: [
+                  TyperAnimatedText('anything'),
+                  TyperAnimatedText('r/Code'),
+                  TyperAnimatedText('r/Flutter'),
+                  TyperAnimatedText('r/Login Ui\'s')
+                ],
+                repeatForever: true,
+                pause: const Duration(milliseconds: 900),
+                stopPauseOnTap: true,
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
-      SizedBox(height: 30),
+      SizedBox(height: 10),
       Container(
         width: 300,
         height: 50,

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_login_template_ui/utils/config.dart';
 import 'package:flutter_login_template_ui/widgets/constants.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:video_player/video_player.dart';
 
 class RedditLogin extends StatefulWidget {
@@ -39,7 +42,14 @@ class _RedditLoginState extends State<RedditLogin> {
                 ),
               ),
             ),
-            TabWidget()
+            _logo(),
+            SizedBox(
+              height: 50,
+            ),
+            Positioned(
+                top: SizeConfig.blockSizeVertical * 55,
+                left: SizeConfig.blockSizeHorizontal * 14,
+                child: Container(child: tabWidget()))
           ],
         ),
       ),
@@ -53,57 +63,148 @@ class _RedditLoginState extends State<RedditLogin> {
   }
 }
 
-class TabWidget extends StatelessWidget {
-  const TabWidget({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: <Widget>[
-        Container(
-          padding: EdgeInsets.all(16),
-          width: 300,
-          height: 250,
-          color: Colors.white.withAlpha(400),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              TextField(
-                decoration: InputDecoration(
-                    hintText: 'Username',
-                    hintStyle: TextStyle(fontWeight: FontWeight.bold)),
+Widget tabWidget() {
+  return Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Container(
+        width: 300,
+        height: 50,
+        // ignore: deprecated_member_use
+        child: RaisedButton(
+          onPressed: () => {},
+          padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+          shape: new RoundedRectangleBorder(
+            borderRadius: new BorderRadius.circular(30.0),
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              FaIcon(
+                FontAwesomeIcons.facebookF,
+                color: Colors.white,
               ),
-              TextField(
-                decoration: InputDecoration(
-                  hintText: 'Password',
-                  hintStyle: TextStyle(fontWeight: FontWeight.bold),
-                ),
-              ),
-              Row(
-                children: [
-                  // ignore: deprecated_member_use
-                  RaisedButton(
-                    child: Text('Sign-In'),
-                    onPressed: () {},
-                  ),
-
-                  SizedBox(
-                    width: 20,
-                  ),
-                  // ignore: deprecated_member_use
-                  RaisedButton(
-                    child: Text('Sign-Up'),
-                    onPressed: () {},
-                  ),
-                ],
+              Text(
+                "Continue With Facebook",
+                style: GoogleFonts.poppins(
+                    fontSize: 15,
+                    color: Colors.white,
+                    letterSpacing: 0.168,
+                    fontWeight: FontWeight.w500),
               ),
             ],
           ),
+          color: Colors.black,
+        ),
+      ),
+      SizedBox(height: 20),
+      Container(
+        width: 300,
+        height: 50,
+        // ignore: deprecated_member_use
+        child: RaisedButton(
+          onPressed: () => {},
+          padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+          shape: new RoundedRectangleBorder(
+            borderRadius: new BorderRadius.circular(30.0),
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              FaIcon(
+                FontAwesomeIcons.facebookF,
+                color: Colors.white,
+              ),
+              Text(
+                "Continue With Facebook",
+                style: GoogleFonts.poppins(
+                    fontSize: 15,
+                    color: Colors.white,
+                    letterSpacing: 0.168,
+                    fontWeight: FontWeight.w500),
+              ),
+            ],
+          ),
+          color: Colors.black,
+        ),
+      ),
+      SizedBox(height: 20),
+      Container(
+        width: 300,
+        height: 50,
+        // ignore: deprecated_member_use
+        child: RaisedButton(
+          onPressed: () => {},
+          padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+          shape: new RoundedRectangleBorder(
+            borderRadius: new BorderRadius.circular(30.0),
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              FaIcon(
+                FontAwesomeIcons.facebookF,
+                color: Colors.white,
+              ),
+              Text(
+                "Continue With Facebook",
+                style: GoogleFonts.poppins(
+                    fontSize: 15,
+                    color: Colors.white,
+                    letterSpacing: 0.168,
+                    fontWeight: FontWeight.w500),
+              ),
+            ],
+          ),
+          color: Colors.black,
+        ),
+      ),
+      SizedBox(height: 100),
+      _already()
+    ],
+  );
+}
+
+Widget _already() {
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Text(
+        "Already have an account? ",
+        style: GoogleFonts.poppins(fontSize: 18, color: Colors.white),
+      ),
+      InkWell(
+        child: Text(
+          "Sign In",
+          style: GoogleFonts.poppins(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              decoration: TextDecoration.underline,
+              color: Colors.white),
+        ),
+        onTap: () {},
+      )
+    ],
+  );
+}
+
+Widget _logo() {
+  return Container(
+    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 50),
+    child: Column(
+      children: [
+        Padding(padding: EdgeInsets.only()),
+        Center(
+          child: Image.asset(
+            UIGuide.logo,
+            height: SizeConfig.blockSizeVertical * 12,
+            width: SizeConfig.blockSizeHorizontal * 100,
+          ),
         ),
       ],
-    );
-  }
+    ),
+  );
 }

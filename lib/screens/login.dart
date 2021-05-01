@@ -100,7 +100,7 @@ Widget _emailFiled() {
   return Container(
     margin: EdgeInsets.all(40),
     padding: EdgeInsets.only(top: 275, left: 5, right: 5),
-    child: Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
+    child: Column(children: [
       TextField(
         decoration: InputDecoration(
             prefixIcon: Icon(
@@ -117,13 +117,10 @@ Widget _emailFiled() {
       SizedBox(height: 30),
       TextField(
         decoration: InputDecoration(
-            prefixIcon: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Icon(
-                FontAwesomeIcons.eyeSlash,
-                color: Color(0xff85B634),
-                size: 20,
-              ),
+            prefixIcon: Icon(
+              FontAwesomeIcons.eyeSlash,
+              color: Color(0xff85B634),
+              size: 20,
             ),
             hintText: "Password",
             fillColor: Color(0xff757575),
@@ -175,21 +172,26 @@ Widget _signup() {
 }
 
 Widget _signinbtn() {
-  // ignore: deprecated_member_use
-  return FlatButton(
-    padding: EdgeInsets.symmetric(vertical: 15, horizontal: 35),
-    onPressed: () => {},
-    shape: new RoundedRectangleBorder(
-      borderRadius: new BorderRadius.circular(30.0),
-    ),
-    child: Text(
-      "Sign In",
-      style: GoogleFonts.montserrat(
-          fontSize: 23,
-          color: Colors.white,
-          letterSpacing: 0.168,
-          fontWeight: FontWeight.w500),
-    ),
-    color: Color(0xff07446C),
+  return Column(
+    crossAxisAlignment: CrossAxisAlignment.center,
+    children: [
+      // ignore: deprecated_member_use
+      FlatButton(
+        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 35),
+        onPressed: () => {},
+        shape: new RoundedRectangleBorder(
+          borderRadius: new BorderRadius.circular(30.0),
+        ),
+        child: Text(
+          "Sign In",
+          style: GoogleFonts.montserrat(
+              fontSize: 23,
+              color: Colors.white,
+              letterSpacing: 0.168,
+              fontWeight: FontWeight.w500),
+        ),
+        color: Color(0xff07446C),
+      ),
+    ],
   );
 }

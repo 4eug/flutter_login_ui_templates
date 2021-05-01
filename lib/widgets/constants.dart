@@ -28,7 +28,7 @@ class UIGuide {
   static final String pirple_img = "assets/images/pirple_img.jpg";
 
   // Videos
-  static final String backgroundvid = "assets/videos/backgroundvid.mp4";
+  static final String backgroundvid = "assets/videos/video.mp4";
 
   // Global Colors
   static const Color WHITE = Colors.white;

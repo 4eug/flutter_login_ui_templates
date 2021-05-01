@@ -34,7 +34,7 @@ class _RedditLoginState extends State<RedditLogin> {
           children: <Widget>[
             SizedBox.expand(
               child: FittedBox(
-                fit: BoxFit.cover,
+                fit: BoxFit.fitHeight,
                 child: SizedBox(
                   width: _controller.value.size?.width ?? 0,
                   height: _controller.value.size?.height ?? 0,
@@ -42,6 +42,8 @@ class _RedditLoginState extends State<RedditLogin> {
                 ),
               ),
             ),
+            _skip(),
+            SizedBox(),
             _logo(),
             SizedBox(
               height: 50,
@@ -213,6 +215,25 @@ Widget _logo() {
             width: SizeConfig.blockSizeHorizontal * 100,
           ),
         ),
+      ],
+    ),
+  );
+}
+
+Widget _skip() {
+  return Container(
+    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 40),
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: [
+        InkWell(
+          child: Text(
+            "Skip",
+            style: GoogleFonts.poppins(
+                fontSize: 15, color: Colors.white, fontWeight: FontWeight.w500),
+          ),
+          onTap: () {},
+        )
       ],
     ),
   );

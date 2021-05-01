@@ -101,7 +101,8 @@ Widget tabWidget() {
                   TyperAnimatedText('anything'),
                   TyperAnimatedText('r/Code'),
                   TyperAnimatedText('r/Flutter'),
-                  TyperAnimatedText('r/Login Ui\'s')
+                  TyperAnimatedText('r/Login Ui\'s'),
+                  TyperAnimatedText('reddit')
                 ],
                 repeatForever: true,
                 pause: const Duration(milliseconds: 900),
@@ -126,12 +127,13 @@ Widget tabWidget() {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             mainAxisSize: MainAxisSize.min,
             children: [
-              FaIcon(
-                FontAwesomeIcons.google,
-                color: Colors.white,
+              Image.asset(
+                UIGuide.google,
+                height: SizeConfig.blockSizeVertical * 2.5,
+                width: SizeConfig.blockSizeHorizontal * 5,
               ),
               Padding(
-                padding: const EdgeInsets.all(6.0),
+                padding: const EdgeInsets.all(4.0),
                 child: Text(
                   "Sign up with Google",
                   style: GoogleFonts.poppins(
@@ -146,7 +148,7 @@ Widget tabWidget() {
           color: Colors.black.withOpacity(0.5),
         ),
       ),
-      SizedBox(height: 20),
+      SizedBox(height: 30),
       Container(
         width: 300,
         height: 50,

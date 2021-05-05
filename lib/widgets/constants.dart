@@ -27,6 +27,7 @@ class UIGuide {
   static final String link_head = "assets/images/linkhead.png";
   // ignore: non_constant_identifier_names
   static final String pirple_img = "assets/images/pirple_img.jpg";
+  static final String patternimg = "assets/images/patterns.png";
 
   // Videos
   static final String backgroundvid = "assets/videos/redditvid.mp4";

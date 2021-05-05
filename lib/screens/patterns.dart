@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login_template_ui/utils/config.dart';
 import 'package:flutter_login_template_ui/widgets/constants.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 
 class PatternsLogin extends StatefulWidget {
@@ -96,24 +96,20 @@ class _PatternsLoginState extends State<PatternsLogin> {
             fontWeight: FontWeight.w500),
         decoration: InputDecoration(
           hintText: "Email address",
+          hintStyle: TextStyle(
+            color: Color(0xffA6B0BD),
+          ),
           fillColor: Colors.white,
           filled: true,
-          suffixIcon: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: FaIcon(
-              FontAwesomeIcons.checkCircle,
-              color: Colors.greenAccent,
-            ),
-          ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.all(
-              Radius.circular(1),
+              Radius.circular(20),
             ),
             borderSide: BorderSide(color: Colors.white),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.all(
-              Radius.circular(1),
+              Radius.circular(10),
             ),
             borderSide: BorderSide(color: Colors.white),
           ),
@@ -151,22 +147,15 @@ class _PatternsLoginState extends State<PatternsLogin> {
           ),
           fillColor: Colors.white,
           filled: true,
-          suffixIcon: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: FaIcon(
-              FontAwesomeIcons.eye,
-              color: Color(0xffCDE0C9).withOpacity(0.9),
-            ),
-          ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.all(
-              Radius.circular(1),
+              Radius.circular(20),
             ),
             borderSide: BorderSide(color: Colors.white),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.all(
-              Radius.circular(1),
+              Radius.circular(10),
             ),
             borderSide: BorderSide(color: Colors.white),
           ),
@@ -182,9 +171,9 @@ class _PatternsLoginState extends State<PatternsLogin> {
       // ignore: deprecated_member_use
       child: FlatButton(
         onPressed: () => {},
-        padding: EdgeInsets.symmetric(vertical: 18, horizontal: 120),
+        padding: EdgeInsets.symmetric(vertical: 18, horizontal: 130),
         shape: new RoundedRectangleBorder(
-          borderRadius: new BorderRadius.circular(40.0),
+          borderRadius: new BorderRadius.circular(20.0),
         ),
         child: Text(
           "LOG IN",

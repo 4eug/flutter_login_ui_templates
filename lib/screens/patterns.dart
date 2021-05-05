@@ -45,7 +45,7 @@ class _PatternsLoginState extends State<PatternsLogin> {
               color: Colors.white,
               borderRadius: BorderRadius.only(topLeft: Radius.circular(60))),
           child: Padding(
-            padding: const EdgeInsets.all(40.0),
+            padding: const EdgeInsets.all(30.0),
             child: SingleChildScrollView(
               physics: NeverScrollableScrollPhysics(),
               child: Column(
@@ -63,8 +63,10 @@ class _PatternsLoginState extends State<PatternsLogin> {
                   SizedBox(height: 20),
                   _inputField1(),
                   _inputField2(),
-                  SizedBox(height: 20),
+                  SizedBox(height: 15),
                   _loginbtn(context),
+                  SizedBox(height: 40),
+                  _passCode()
                 ],
               ),
             ),
@@ -187,4 +189,26 @@ class _PatternsLoginState extends State<PatternsLogin> {
       ),
     );
   }
+}
+
+Widget _passCode() {
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Text(
+        "Don\'t have an account? ",
+        style: GoogleFonts.montserrat(fontSize: 20, color: Colors.black),
+      ),
+      InkWell(
+        child: Text(
+          "Sign Up",
+          style: GoogleFonts.montserrat(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              decoration: TextDecoration.underline),
+        ),
+        onTap: () {},
+      )
+    ],
+  );
 }

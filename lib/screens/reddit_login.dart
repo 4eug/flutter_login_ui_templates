@@ -112,7 +112,7 @@ Widget tabWidget() {
           ),
         ],
       ),
-      SizedBox(height: 10),
+      SizedBox(height: 20),
       Container(
         width: 300,
         height: 50,
@@ -148,7 +148,7 @@ Widget tabWidget() {
           color: Colors.black.withOpacity(0.5),
         ),
       ),
-      SizedBox(height: 30),
+      SizedBox(height: 20),
       Container(
         width: 300,
         height: 50,

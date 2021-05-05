@@ -111,6 +111,9 @@ Widget _inputField1() {
           fontWeight: FontWeight.w500),
       decoration: InputDecoration(
         hintText: "Email address",
+        hintStyle: TextStyle(
+          color: Color(0xffA6B0BD),
+        ),
         fillColor: Colors.white,
         filled: true,
         suffixIcon: Padding(

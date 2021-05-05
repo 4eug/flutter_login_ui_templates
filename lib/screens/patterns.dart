@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login_template_ui/utils/config.dart';
 import 'package:flutter_login_template_ui/widgets/constants.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class PatternsLogin extends StatefulWidget {
@@ -59,8 +60,9 @@ class _PatternsLoginState extends State<PatternsLogin> {
                           fontWeight: FontWeight.w500,
                         )),
                   ),
-                  _textField(context),
-                  _textField(context),
+                  SizedBox(height: 20),
+                  _inputField1(),
+                  _inputField2(),
                   SizedBox(height: 20),
                   _loginbtn(context),
                 ],
@@ -70,23 +72,109 @@ class _PatternsLoginState extends State<PatternsLogin> {
         ),
       );
 
-  Widget _textField(context) => Padding(
-        padding: const EdgeInsets.fromLTRB(0, 20, 0, 10),
-        child: TextField(
-          style: TextStyle(color: Colors.grey),
-          textAlign: TextAlign.left,
-          obscureText: true,
-          autocorrect: false,
-          cursorColor: Colors.grey,
-          maxLines: 1,
-          decoration: InputDecoration(
-            border: new UnderlineInputBorder(
-                borderSide: new BorderSide(color: Colors.grey)),
-            hintText: 'Email',
-            hintStyle: TextStyle(color: Colors.grey),
+  Widget _inputField1() {
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.all(
+          Radius.circular(50),
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black,
+            blurRadius: 25,
+            offset: Offset(0, 5),
+            spreadRadius: -25,
+          ),
+        ],
+      ),
+      margin: EdgeInsets.only(bottom: 20),
+      child: TextField(
+        style: GoogleFonts.poppins(
+            fontSize: 20,
+            color: Colors.black,
+            letterSpacing: 0.24,
+            fontWeight: FontWeight.w500),
+        decoration: InputDecoration(
+          hintText: "Email address",
+          fillColor: Colors.white,
+          filled: true,
+          suffixIcon: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FaIcon(
+              FontAwesomeIcons.checkCircle,
+              color: Colors.greenAccent,
+            ),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(1),
+            ),
+            borderSide: BorderSide(color: Colors.white),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(1),
+            ),
+            borderSide: BorderSide(color: Colors.white),
           ),
         ),
-      );
+      ),
+    );
+  }
+
+  Widget _inputField2() {
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.all(
+          Radius.circular(50),
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black,
+            blurRadius: 25,
+            offset: Offset(0, 5),
+            spreadRadius: -25,
+          ),
+        ],
+      ),
+      margin: EdgeInsets.only(bottom: 20),
+      child: TextField(
+        style: GoogleFonts.poppins(
+            fontSize: 20,
+            color: Colors.black,
+            letterSpacing: 0.24,
+            fontWeight: FontWeight.w500),
+        decoration: InputDecoration(
+          hintText: "Password",
+          hintStyle: TextStyle(
+            color: Color(0xffA6B0BD),
+          ),
+          fillColor: Colors.white,
+          filled: true,
+          suffixIcon: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FaIcon(
+              FontAwesomeIcons.eye,
+              color: Color(0xffCDE0C9).withOpacity(0.9),
+            ),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(1),
+            ),
+            borderSide: BorderSide(color: Colors.white),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(1),
+            ),
+            borderSide: BorderSide(color: Colors.white),
+          ),
+        ),
+        obscureText: true,
+      ),
+    );
+  }
 
   Widget _loginbtn(context) {
     // ignore: deprecated_member_use

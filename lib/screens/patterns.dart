@@ -24,10 +24,9 @@ class _PatternsLoginState extends State<PatternsLogin> {
   Widget get _topBar => Container(
         child: Column(
           children: [
-            Padding(padding: EdgeInsets.only()),
             Positioned(
-              top: SizeConfig.blockSizeVertical * 10,
-              left: SizeConfig.blockSizeHorizontal * 10,
+              top: SizeConfig.blockSizeVertical * 1,
+              left: SizeConfig.blockSizeHorizontal * 1,
               child: Image.asset(
                 UIGuide.patternimg,
                 fit: BoxFit.fitHeight,
@@ -56,7 +55,7 @@ class _PatternsLoginState extends State<PatternsLogin> {
                     child: Text("Login",
                         style: GoogleFonts.poppins(
                           fontSize: 30,
-                          color: Colors.blue,
+                          color: Color(0xff205072),
                           fontWeight: FontWeight.w500,
                         )),
                   ),
@@ -185,7 +184,7 @@ class _PatternsLoginState extends State<PatternsLogin> {
               letterSpacing: 0.168,
               fontWeight: FontWeight.w500),
         ),
-        color: Colors.yellowAccent,
+        color: Color(0xffF9F90D),
       ),
     );
   }

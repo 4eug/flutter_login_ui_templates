@@ -1,4 +1,7 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_login_template_ui/routes/routes.dart';
 
 import 'package:flutter_login_template_ui/utils/config.dart';
 import 'package:flutter_login_template_ui/widgets/constants.dart';
@@ -15,15 +18,15 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   void initState() {
     super.initState();
-    // loadContext();
+    loadContext();
   }
 
-  // loadContext() async {
-  //   Timer(Duration(seconds: 5), () {
-  //     Navigator.of(context)
-  //         .pushNamedAndRemoveUntil(homeScreenRoute, (route) => false);
-  //   });
-  // }
+  loadContext() async {
+    Timer(Duration(seconds: 5), () {
+      Navigator.of(context)
+          .pushNamedAndRemoveUntil(homeScreenRoute, (route) => false);
+    });
+  }
 
   Widget build(BuildContext context) {
     SizeConfig().init(context);

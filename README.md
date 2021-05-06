@@ -15,4 +15,4 @@ After Cloning it on Screen
 
 | Screenshot | | App Preview |
 
-<img src= "assets/screenshots/flutter_01.png" width="350"> <img src="assets/screenshots/login.gif" width="450">
+<img src= "assets/screenshots/flutter_01.png" width="350"> <img src="assets/screenshots/login.gif" width="400">

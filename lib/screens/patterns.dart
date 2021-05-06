@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_login_template_ui/utils/config.dart';
+
 import 'package:flutter_login_template_ui/widgets/constants.dart';
 
 import 'package:google_fonts/google_fonts.dart';
@@ -24,13 +24,9 @@ class _PatternsLoginState extends State<PatternsLogin> {
   Widget get _topBar => Container(
         child: Column(
           children: [
-            Positioned(
-              top: SizeConfig.blockSizeVertical * 1,
-              left: SizeConfig.blockSizeHorizontal * 1,
-              child: Image.asset(
-                UIGuide.patternimg,
-                fit: BoxFit.fitHeight,
-              ),
+            Image.asset(
+              UIGuide.patternimg,
+              fit: BoxFit.fitHeight,
             ),
           ],
         ),
@@ -42,7 +38,7 @@ class _PatternsLoginState extends State<PatternsLogin> {
           height: double.infinity,
           decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.only(topLeft: Radius.circular(60))),
+              borderRadius: BorderRadius.only(topLeft: Radius.circular(1))),
           child: Padding(
             padding: const EdgeInsets.all(30.0),
             child: SingleChildScrollView(

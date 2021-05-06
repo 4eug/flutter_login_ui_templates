@@ -12,3 +12,6 @@ UI Designed by Me
 ## Preview On Device
 
 After Cloning it on Screen
+
+| App Preview |
+<img src="login Ui.mp4" width="350">

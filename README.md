@@ -14,4 +14,6 @@ UI Designed by Me
 After Cloning it on Screen
 
 | App Preview |
-<img src="assets/screenshots/Login UI.gif" width="350">
+<img src="assets/ui/Lighthouse_login_ui.jpg" width="350">
+
+assets/screenshots/Login UI.gif

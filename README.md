@@ -4,14 +4,14 @@ UI Designed by Me
 
 # Ui Designs
 
-<img src="images/Screens/Veeapp.jpeg" height="500em" />
-<img src="images/Screens/Veeapp.jpeg" height="500em" />
-<img src="images/Screens/Veeapp.jpeg" height="500em" />
-<img src="images/Screens/Veeapp.jpeg" height="500em" />
-<img src="images/Screens/Veeapp.jpeg" height="500em" />
-<img src="images/Screens/Veeapp.jpeg" height="500em" />
-<img src="images/Screens/Veeapp.jpeg" height="500em" />
-<img src="images/Screens/Veeapp.jpeg" height="500em" />
+<img src="assets/ui/Reddit_login_ui.jpg" height="500em" />
+<img src="assets/ui/Pirple_login_ui.jpg" height="500em" />
+<img src="assets/ui/Grapple_login_ui.jpg" height="500em" />
+<img src="assets/ui/Black&White_login_ui.jpg" height="500em" />
+<img src="assets/ui/" height="500em" />
+<img src="assets/ui/" height="500em" />
+<img src="assets/ui/" height="500em" />
+<img src="assets/ui/Login_ui.jpg" height="500em" />
 
 ## Preview On Device
 

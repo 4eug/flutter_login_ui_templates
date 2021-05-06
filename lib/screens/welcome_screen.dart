@@ -35,7 +35,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             color: Colors.black,
             height: SizeConfig.blockSizeVertical * 100,
             child: Opacity(
-              opacity: 0.4,
+              opacity: 0.6,
               child: Image.asset(
                 UIGuide.background,
                 fit: BoxFit.fill,

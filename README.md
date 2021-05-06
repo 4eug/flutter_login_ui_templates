@@ -1,6 +1,6 @@
 # Flutter Login Template Ui
 
-UI Designed by Me
+UI Designs by Me
 
 # Ui Designs
 
@@ -18,4 +18,4 @@ After Cloning it on Screen
 <img src= "assets/screenshots/flutter_01.png" width="350">
 
 | App Preview |
-<img src="assets/screenshots/Login UI.gif" width="350">
+<img src="assets/screenshots/login.gif" width="350">

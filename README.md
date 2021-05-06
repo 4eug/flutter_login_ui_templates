@@ -14,4 +14,4 @@ UI Designed by Me
 After Cloning it on Screen
 
 | App Preview |
-<img src="login Ui.gif" width="350">
+<img src="assets/screenshots/Login UI.gif" width="350">

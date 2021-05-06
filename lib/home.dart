@@ -51,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
           return SizedBox();
         } else {
           return GridView(
-            padding: EdgeInsets.only(top: 5, left: 12, right: 12),
+            padding: EdgeInsets.only(top: 10, left: 10, right: 10),
             scrollDirection: Axis.vertical,
             children: List.generate(homeList.length, (index) {
               return HomeListView(
@@ -68,9 +68,9 @@ class _HomeScreenState extends State<HomeScreen> {
             }),
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: multiple ? 2 : 1,
-              mainAxisSpacing: 12.0,
-              crossAxisSpacing: 12.0,
-              childAspectRatio: 1.5,
+              mainAxisSpacing: 10.0,
+              crossAxisSpacing: 5.0,
+              childAspectRatio: 1.4,
             ),
           );
         }

@@ -14,4 +14,4 @@ UI Designed by Me
 After Cloning it on Screen
 
 | App Preview |
-<img src="login Ui.mp4" width="350">
+<video src="login Ui.mp4" width="350">

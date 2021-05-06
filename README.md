@@ -13,9 +13,6 @@ UI Designs by Me
 
 After Cloning it on Screen
 
-| Screenshot |
+| Screenshot | | App Preview |
 
-<img src= "assets/screenshots/flutter_01.png" width="350">
-
-| App Preview |
-<img src="assets/screenshots/login.gif" width="350">
+<img src= "assets/screenshots/flutter_01.png" width="350"> <img src="assets/screenshots/login.gif" width="350">

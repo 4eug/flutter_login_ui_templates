@@ -13,7 +13,9 @@ UI Designed by Me
 
 After Cloning it on Screen
 
-| App Preview |
-<img src="assets/ui/Lighthouse_login_ui.jpg" width="350">
+| Screenshot |
 
-assets/screenshots/Login UI.gif
+<img src= "assets/screenshots/flutter_01.png" width="350">
+
+| App Preview |
+<img src="assets/screenshots/Login UI.gif" width="350">
